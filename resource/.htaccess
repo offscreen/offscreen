@@ -1,0 +1,6 @@
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex,nofollow,none,noarchive,nosnippet,noodp,notranslate,noimageindex"
+  <FilesMatch "\.(doc|pdf|png|jpe?g|gif)$">
+    Header set X-Robots-Tag "noindex,nofollow,none,noarchive,nosnippet,noodp,notranslate,noimageindex"
+  </FilesMatch>
+</IfModule>
