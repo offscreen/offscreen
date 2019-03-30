@@ -232,13 +232,13 @@ div.epigraph > blockquote > footer { font-style: normal; }
 div.epigraph > blockquote > footer > cite { font-style: italic; }
 /* end chapter epigraphs styles */
 
-blockquote { font-size: 1.4rem; }
+blockquote { font-size: 0.7rem; }
 
 blockquote p { width: 70%;
                margin-left: 30px; }
 
 blockquote footer { width: 70%;
-                    font-size: 1.1rem;
+                    font-size: 0.7rem;
                     text-align: right; }
 
 section > p, section > footer, section > table { width: 100%; }
