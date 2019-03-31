@@ -77,12 +77,20 @@
             <h3 class="notranslate" translate="no">Patrick Fuery</h3>
         </hgroup>
     </header>
-    <section class="notranslate" translate="no">
+    <section>
         <form action="https://translate.google.com/translate" method="get" target="_blank">
-            <input name="sl" type="hidden" value="en">
-            <input name="tl" type="hidden" value="id">
-            <input name="u" placeholder="URL to translate" value="window.location.href;" required="required" type="url">
-            <button class="notranslate" translate="no" type="submit">Translate</button>
+            <fieldset>
+                <input name="sl" type="hidden" value="en">
+
+                <input id='arabic' name='tl' type='radio' value='ar'/><label class='notranslate' for='arabic'translate='no'>Arabic</label>
+                <input id='french' name='tl' type='radio' value='fr'/><label class='notranslate' for='french'translate='no'>French</label>
+                <input checked='checked' id='indonesian' name='tl' type='radio' value='id'/><label class='notranslate' for='indonesian'translate='no'>Indonesian</label>
+                <input id='javanese' name='tl' type='radio' value='jw'/><label class='notranslate' for='javanese'translate='no'>Javanese</label>
+                <input id='rusian' name='tl' type='radio' value='ru'/><label class='notranslate' for='rusian'translate='no'>Rusian</label>
+
+                <input name="u" placeholder="URL to translate" value="window.location.href;" required="required" type="url">
+                <button class="notranslate" translate="no" type="submit">Translate</button>
+            </fieldset>
         </form>
     </section>
     <section>
