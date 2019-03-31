@@ -100,7 +100,14 @@
             </fieldset>
             <fieldset>
                 <legend class="notranslate" translate="no">Uniform Resource Locator</legend>
-                <input name="u" placeholder="URL to translate" required="required" type="url">
+                <a id="getURL" href="#">Get URL</a>
+                <script>
+                    $("getURL").click(function() {
+                        var path = window.location.href;
+                        $("inputURL").val(path);
+                    });
+                </script>
+                <input id="inputURL" name="u" placeholder="URL to translate" required="required" type="url">
                 <button class="notranslate" translate="no" type="submit">Translate</button>
             </fieldset>
         </form>
