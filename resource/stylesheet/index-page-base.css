@@ -11,6 +11,10 @@ html {
   background: #fffff8;
   color: #112;
   font-size: 15px;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color:transparent
 }
 
 @media (max-width: 786px) {
