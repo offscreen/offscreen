@@ -96,7 +96,6 @@
             <fieldset>
                 <legend class="notranslate" translate="no">Uniform Resource Locator</legend>
                 <label for="inputURL"><a class="notranslate" href="#" id="getURL" translate="no">Get URL</a></label>
-                <script>$("#getURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
                 <input id="inputURL" name="u" placeholder="URL to translate" required="required" type="url">
                 <button class="notranslate" translate="no" type="submit">Translate</button>
             </fieldset>
@@ -116,6 +115,7 @@
         <p class="notranslate" translate="no"><small>Copyright &copy; <span id='now_d'></span> Patrick Fuery</small></p>
     </footer>
 </article>
+<script>$("#getURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
 <script src="/resource/script/date.js"></script>
 </body>
 </html>
