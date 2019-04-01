@@ -1,4 +1,4 @@
-var link = document.createElement('link');
-link.setAttribute('rel', 'canonical');
-link.setAttribute('href', location.protocol + '://' + location.host + location.pathname);
-document.head.appendChild(link);
+var canonical = document.createElement('link');
+canonical.setAttribute('rel', 'canonical');
+canonical.setAttribute('href', location.protocol + '://' + location.host + location.pathname);
+document.head.appendChild(canonical);
