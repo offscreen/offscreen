@@ -22,3 +22,8 @@ var prerender = document.createElement('link');
 prerender.setAttribute('rel', 'prerender');
 prerender.setAttribute('href', location.protocol + '//' + location.host);
 document.head.appendChild(prerender);
+
+var publisher = document.createElement('link');
+publisher.setAttribute('rel', 'publisher');
+publisher.setAttribute('href', location.protocol + '//' + location.host);
+document.head.appendChild(publisher);
