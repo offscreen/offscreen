@@ -145,3 +145,9 @@ hr {
   -o-user-select: none;
   user-select: none
 }
+
+@media print {
+  .dont-print {
+    display: none;
+  }
+}
