@@ -78,6 +78,7 @@
     <section class="ot">
         <h2 class="notranslate" translate="no">Translate</h2>
         <form action="https://translate.google.com/translate" method="get" target="_blank">
+        	<!--
             <fieldset>
                 <legend class="notranslate" translate="no">From</legend>
                 <input id="arabicsl" name="sl" type="radio" value="ar" required="required"><label class="notranslate" for="arabicsl" translate="no">Arabic</label>
@@ -94,6 +95,228 @@
                 <input checked="checked" id="indonesian" name="tl" type="radio" value="id"/><label class="notranslate" for="indonesian" translate="no">Indonesian</label>
                 <input id="javanese" name="tl" type="radio" value="jw"><label class="notranslate" for="javanese" translate="no">Javanese</label>
             </fieldset>
+        	-->
+        	<fieldset>
+        		<legend class="notranslate" translate="no">From</legend>
+        		<label class="notranslate" for="sl" translate="no">Source Language</label>
+        		<input id="sl" list="sl" name="sl" type="search" value="" required="required">
+        		<datalist id="sl">
+        		    <option value="af">Afrikans</option>
+        		    <option value="sq">Albania</option>
+        		    <option value="am">Amhara</option>
+        		    <option value="ar">Arab</option>
+        		    <option value="hy">Armenia</option>
+        		    <option value="az">Azerbaijan</option>
+        		    <option value="eu">Basque</option>
+        		    <option value="nl">Belanda</option>
+        		    <option value="be">Belarussia</option>
+        		    <option value="bn">Bengali</option>
+        		    <option value="bs">Bosnia</option>
+        		    <option value="bg">Bulgaria</option>
+        		    <option value="my">Burma</option>
+        		    <option value="ceb">Cebuano</option>
+        		    <option value="cs">Cek</option>
+        		    <option value="ny">Chichewa</option>
+        		    <option value="zh-CN">China</option>
+        		    <option value="da">Denmark</option>
+        		    <option value="eo">Esperanto</option>
+        		    <option value="et">Estonia</option>
+        		    <option value="fa">Farsi</option>
+        		    <option value="fi">Finlandia</option>
+        		    <option value="fy">Frisia</option>
+        		    <option value="ga">Gaelig</option>
+        		    <option value="gd">Gaelik Skotlandia</option>
+        		    <option value="gl">Galisia</option>
+        		    <option value="ka">Georgia</option>
+        		    <option value="gu">Gujarati</option>
+        		    <option value="ha">Hausa</option>
+        		    <option value="haw">Hawaii</option>
+        		    <option value="hi">Hindi</option>
+        		    <option value="hmn">Hmong</option>
+        		    <option value="iw">Ibrani</option>
+        		    <option value="ig">Igbo</option>
+        		    <option value="id">Indonesia</option>
+        		    <option selected="selected" value="en">Inggris</option>
+        		    <option value="is">Islan</option>
+        		    <option value="it">Italia</option>
+        		    <option value="jw">Jawa</option>
+        		    <option value="ja">Jepang</option>
+        		    <option value="de">Jerman</option>
+        		    <option value="kn">Kannada</option>
+        		    <option value="ca">Katala</option>
+        		    <option value="kk">Kazak</option>
+        		    <option value="km">Khmer</option>
+        		    <option value="ky">Kirghiz</option>
+        		    <option value="ko">Korea</option>
+        		    <option value="co">Korsika</option>
+        		    <option value="ht">Kreol Haiti</option>
+        		    <option value="hr">Kroat</option>
+        		    <option value="ku">Kurdi</option>
+        		    <option value="lo">Laos</option>
+        		    <option value="la">Latin</option>
+        		    <option value="lv">Latvia</option>
+        		    <option value="lt">Lituania</option>
+        		    <option value="lb">Luksemburg</option>
+        		    <option value="hu">Magyar</option>
+        		    <option value="mk">Makedonia</option>
+        		    <option value="mg">Malagasi</option>
+        		    <option value="ml">Malayalam</option>
+        		    <option value="mt">Malta</option>
+        		    <option value="mi">Maori</option>
+        		    <option value="mr">Marathi</option>
+        		    <option value="ms">Melayu</option>
+        		    <option value="mn">Mongol</option>
+        		    <option value="ne">Nepal</option>
+        		    <option value="no">Norsk</option>
+        		    <option value="ps">Pashto</option>
+        		    <option value="pl">Polandia</option>
+        		    <option value="pt">Portugis</option>
+        		    <option value="fr">Prancis</option>
+        		    <option value="pa">Punjabi</option>
+        		    <option value="ro">Rumania</option>
+        		    <option value="ru">Rusia</option>
+        		    <option value="sm">Samoa</option>
+        		    <option value="sr">Serb</option>
+        		    <option value="st">Sesotho</option>
+        		    <option value="sn">Shona</option>
+        		    <option value="sd">Sindhi</option>
+        		    <option value="si">Sinhala</option>
+        		    <option value="sk">Slovakia</option>
+        		    <option value="sl">Slovenia</option>
+        		    <option value="so">Somali</option>
+        		    <option value="es">Spanyol</option>
+        		    <option value="su">Sunda</option>
+        		    <option value="sw">Swahili</option>
+        		    <option value="sv">Swensk</option>
+        		    <option value="tl">Tagalog</option>
+        		    <option value="tg">Tajik</option>
+        		    <option value="ta">Tamil</option>
+        		    <option value="te">Telugu</option>
+        		    <option value="th">Thai</option>
+        		    <option value="tr">Turki</option>
+        		    <option value="uk">Ukraina</option>
+        		    <option value="ur">Urdu</option>
+        		    <option value="uz">Uzbek</option>
+        		    <option value="vi">Vietnam</option>
+        		    <option value="cy">Wales</option>
+        		    <option value="xh">Xhosa</option>
+        		    <option value="yi">Yiddi</option>
+        		    <option value="yo">Yoruba</option>
+        		    <option value="el">Yunani</option>
+        		    <option value="zu">Zulu</option>
+        		</datalist>
+        	</fieldset>
+        	<fieldset>
+        		<legend class="notranslate" translate="no">To</legend>
+        		<label class="notranslate" for="tl" translate="no">Translate Language</label>
+        		<input id="tl" list="tl" name="tl" type="search" value="" required="required">
+        		<datalist id="tl">
+        		    <option value="af">Afrikans</option>
+        		    <option value="sq">Albania</option>
+        		    <option value="am">Amhara</option>
+        		    <option value="ar">Arab</option>
+        		    <option value="hy">Armenia</option>
+        		    <option value="az">Azerbaijan</option>
+        		    <option value="eu">Basque</option>
+        		    <option value="nl">Belanda</option>
+        		    <option value="be">Belarussia</option>
+        		    <option value="bn">Bengali</option>
+        		    <option value="bs">Bosnia</option>
+        		    <option value="bg">Bulgaria</option>
+        		    <option value="my">Burma</option>
+        		    <option value="ceb">Cebuano</option>
+        		    <option value="cs">Cek</option>
+        		    <option value="ny">Chichewa</option>
+        		    <option value="zh-CN">China (Aks. Sederhana)</option>
+        		    <option value="zh-TW">China (Aks. Tradisional)</option>
+        		    <option value="da">Denmark</option>
+        		    <option value="eo">Esperanto</option>
+        		    <option value="et">Estonia</option>
+        		    <option value="fa">Farsi</option>
+        		    <option value="fi">Finlandia</option>
+        		    <option value="fy">Frisia</option>
+        		    <option value="ga">Gaelig</option>
+        		    <option value="gd">Gaelik Skotlandia</option>
+        		    <option value="gl">Galisia</option>
+        		    <option value="ka">Georgia</option>
+        		    <option value="gu">Gujarati</option>
+        		    <option value="ha">Hausa</option>
+        		    <option value="haw">Hawaii</option>
+        		    <option value="hi">Hindi</option>
+        		    <option value="hmn">Hmong</option>
+        		    <option value="iw">Ibrani</option>
+        		    <option value="ig">Igbo</option>
+        		    <option selected="selected" value="id">Indonesia</option>
+        		    <option value="en">Inggris</option>
+        		    <option value="is">Islan</option>
+        		    <option value="it">Italia</option>
+        		    <option value="jw">Jawa</option>
+        		    <option value="ja">Jepang</option>
+        		    <option value="de">Jerman</option>
+        		    <option value="kn">Kannada</option>
+        		    <option value="ca">Katala</option>
+        		    <option value="kk">Kazak</option>
+        		    <option value="km">Khmer</option>
+        		    <option value="ky">Kirghiz</option>
+        		    <option value="ko">Korea</option>
+        		    <option value="co">Korsika</option>
+        		    <option value="ht">Kreol Haiti</option>
+        		    <option value="hr">Kroat</option>
+        		    <option value="ku">Kurdi</option>
+        		    <option value="lo">Laos</option>
+        		    <option value="la">Latin</option>
+        		    <option value="lv">Latvia</option>
+        		    <option value="lt">Lituania</option>
+        		    <option value="lb">Luksemburg</option>
+        		    <option value="hu">Magyar</option>
+        		    <option value="mk">Makedonia</option>
+        		    <option value="mg">Malagasi</option>
+        		    <option value="ml">Malayalam</option>
+        		    <option value="mt">Malta</option>
+        		    <option value="mi">Maori</option>
+        		    <option value="mr">Marathi</option>
+        		    <option value="ms">Melayu</option>
+        		    <option value="mn">Mongol</option>
+        		    <option value="ne">Nepal</option>
+        		    <option value="no">Norsk</option>
+        		    <option value="ps">Pashto</option>
+        		    <option value="pl">Polandia</option>
+        		    <option value="pt">Portugis</option>
+        		    <option value="fr">Prancis</option>
+        		    <option value="pa">Punjabi</option>
+        		    <option value="ro">Rumania</option>
+        		    <option value="ru">Rusia</option>
+        		    <option value="sm">Samoa</option>
+        		    <option value="sr">Serb</option>
+        		    <option value="st">Sesotho</option>
+        		    <option value="sn">Shona</option>
+        		    <option value="sd">Sindhi</option>
+        		    <option value="si">Sinhala</option>
+        		    <option value="sk">Slovakia</option>
+        		    <option value="sl">Slovenia</option>
+        		    <option value="so">Somali</option>
+        		    <option value="es">Spanyol</option>
+        		    <option value="su">Sunda</option>
+        		    <option value="sw">Swahili</option>
+        		    <option value="sv">Swensk</option>
+        		    <option value="tl">Tagalog</option>
+        		    <option value="tg">Tajik</option>
+        		    <option value="ta">Tamil</option>
+        		    <option value="te">Telugu</option>
+        		    <option value="th">Thai</option>
+        		    <option value="tr">Turki</option>
+        		    <option value="uk">Ukraina</option>
+        		    <option value="ur">Urdu</option>
+        		    <option value="uz">Uzbek</option>
+        		    <option value="vi">Vietnam</option>
+        		    <option value="cy">Wales</option>
+        		    <option value="xh">Xhosa</option>
+        		    <option value="yi">Yiddi</option>
+        		    <option value="yo">Yoruba</option>
+        		    <option value="el">Yunani</option>
+        		    <option value="zu">Zulu</option>
+        		</datalist>
+        	</fieldset>
             <fieldset>
                 <legend class="notranslate" translate="no">Uniform Resource Locator</legend>
                 <label for="inputURL" class="notranslate" id="getURL" translate="no" title="Click to get Uniform Resource Locator."><u>Get URL</u></label>
