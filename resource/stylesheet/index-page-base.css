@@ -147,7 +147,7 @@ hr {
 }
 
 @media print {
-  .dont-print {
-    display: none;
+  .dp {
+    display: none
   }
 }
