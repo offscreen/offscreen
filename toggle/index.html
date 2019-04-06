@@ -362,13 +362,13 @@
 <script>
     $(document).ready(function(){
         $(".slide-up").click(function(){
-            $("#pane").slideUp();
+            $("#pane").slideUp("fast");
         });
         $(".slide-down").click(function(){
-            $("#wpane").slideDown();
+            $("#wpane").slideDown(400);
         });
         $(".slide-toggle").click(function(){
-            $("#pane").slideToggle();
+            $("#pane").slideToggle("slow");
         });
     });
 </script>
