@@ -70,7 +70,7 @@
 </head>
 <body>
     <div class="gap-top" id="gap-top"></div>
-    <div class="slide-toggle pane hidden hidden-print" id="pane">
+    <div class="pane hidden hidden-print" id="pane">
         <div class="content pane-content cf">
             <aside class="pane-content-col pull-left">
     <!-- Translate Form -->
@@ -362,13 +362,13 @@
 <script>
     $(document).ready(function(){
         $(".slide-up").click(function(){
-            $("#wrapper").slideUp();
+            $("#pane").slideUp();
         });
         $(".slide-down").click(function(){
-            $("#wrapper").slideDown();
+            $("#wpane").slideDown();
         });
         $(".slide-toggle").click(function(){
-            $("#wrapper").slideToggle();
+            $("#pane").slideToggle();
         });
     });
 </script>
