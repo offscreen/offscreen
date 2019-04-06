@@ -70,7 +70,9 @@
 </head>
 <body>
     <div class="gap-top" id="gap-top"></div>
-    <aside id="wrapper">
+    <div class="pane hidden hidden-print" id="pane">
+        <div class="content pane-content cf">
+            <aside class="pane-content-col pull-left">
     <!-- Translate Form -->
     <section class="ot dp">
         <h2 class="notranslate" translate="no">Translate Form</h2>
@@ -313,7 +315,10 @@
             </fieldset>
         </form>
     </section>
-</aside>
+            </aside>
+        </div>
+    </div>
+    <div class="outer" id="outer">
 <main>
     <nav>
         <div class="slide-toggle" id="toggle" style="cursor:pointer;">Menu</div>
@@ -349,6 +354,7 @@
     </footer>
 </article>
 </main>
+</div>
 <div class="gap-bottom" id="gap-bottom"></div>
 <script>$("#getURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
 <script src="/resource/script/date.js"></script>
