@@ -69,7 +69,7 @@
     <script src="/resource/script/url-form-field.js"></script>
 </head>
 <body>
-<aside>
+<aside id="wrapper">
     <!-- Translate Form -->
     <section class="ot dp">
         <h2 class="notranslate" translate="no">Translate Form</h2>
@@ -315,7 +315,7 @@
 </aside>
 <main>
     <nav>
-        <div id="toggle">Trans</div>
+        <div class="slide-toggle" id="toggle">Trans</div>
     </nav>
     <article>
 	<!-- Header of Content -->
@@ -351,5 +351,18 @@
 <script>$("#getURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
 <script src="/resource/script/date.js"></script>
 <script src="/resource/script/sticky-attribution.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".slide-up").click(function(){
+            $("#wrapper").slideUp();
+        });
+        $(".slide-down").click(function(){
+            $("#wrapper").slideDown();
+        });
+        $(".slide-toggle").click(function(){
+            $("#wrapper").slideToggle();
+        });
+    });
+</script>
 </body>
 </html>
