@@ -319,10 +319,21 @@
         </div>
     </div>
     <div class="outer" id="outer">
-<main>
-    <nav>
-        <div class="slide-toggle" id="toggle" style="cursor:pointer;">Menu</div>
-    </nav>
+        <header class="header hidden-print" id="header">
+            <a class="menu" id="menu" href="#pane">
+                <span></span><span></span><span></span><span class="hidden-visually">Toggle Menu</span>
+            </a>
+            <h1><a href="/">Offscreen Space</a></h1>
+            <p class="header-description hidden">...</p>
+        </header>
+        <nav class="nav hidden-print" id="nav">
+            <ul>
+                <li class="current"><a href="#">Almanac</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <section class="content" id="content">
+            <main class="main" id="main" role="main">
     <article>
 	<!-- Header of Content -->
     <header>
@@ -362,13 +373,13 @@
 <script>
     $(document).ready(function(){
         $(".slide-up").click(function(){
-            $("#pane").slideUp("fast");
+            $("#menu").slideUp("fast");
         });
         $(".slide-down").click(function(){
-            $("#wpane").slideDown(400);
+            $("#menu").slideDown(400);
         });
         $(".slide-toggle").click(function(){
-            $("#pane").slideToggle("slow");
+            $("#menu").slideToggle("slow");
         });
     });
 </script>
