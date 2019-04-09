@@ -42,7 +42,7 @@ input::-moz-focus-inner {
   padding:0;
   border:0;
 }
-span .strip,
+.strip,
 button,
 input[type=button],
 input[type=reset],
@@ -81,7 +81,7 @@ label input[type=radio] {
 p {margin:0 0 1em}
 textarea {
   width:100%;
-  min-height:37em;
+  min-height:30em;
   font-family:"Courier New",Courier,"Nimbus Mono L",Monospace;
   resize:vertical;
 }
