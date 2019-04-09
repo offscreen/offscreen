@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html dir="ltr">
-  <!-- https://plus.google.com/108949996304093815163/about -->
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Compressor</title>
-    <link href="img/favicon.ico" rel="shortcut icon">
+    <title>Texts Compressor to Translate</title>
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="css/converter.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
     <main>
-      <div>
-        <fieldset>
-          <legend>Converter</legend>
-    <textarea id="ta" spellcheck="false"></textarea>
-    <button id="bt">Compress HTML</button>
-        </fieldset>
-      </div>
+        <div>
+            <fieldset>
+                <legend>Converter</legend>
+                <textarea id="ta" spellcheck="false"></textarea>
+                <button id="bt">Compress HTML</button>
+            </fieldset>
+        </div>
     </main>
-    <script>(function(){var ta=document.getElementById('ta'),bt=document.getElementById('bt');function compress(){var v=ta.value;v=v.replace(/(>)?\s+/g,'$1 ');v=v.replace(/([\n\r\t ]+)</g,'<');ta.value=v;ta.focus();ta.select()}bt.onclick=compress})();</script>
-  </body>
+    <script src="js/compress.js"></script>
+</body>
 </html>
