@@ -81,7 +81,7 @@ label input[type=radio] {
 p {margin:0 0 1em}
 textarea {
   width:100%;
-  min-height:30em;
+  min-height:37em;
   font-family:"Courier New",Courier,"Nimbus Mono L",Monospace;
   resize:vertical;
 }
