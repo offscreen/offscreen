@@ -1,1 +1,0 @@
-(function(){var ta=document.getElementById('ta'),bt=document.getElementById('bt');function compress(){var v=ta.value;v=v.replace(/(>)?\s+/g,'$1 ');v=v.replace(/([\n\r\t ]+)</g,'<');ta.value=v;ta.focus();ta.select()}bt.onclick=compress})();
