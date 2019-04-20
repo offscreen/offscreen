@@ -155,6 +155,28 @@ code {
   line-height: 1.42;
 }
 
+h1 > code,
+h2 > code,
+h3 > code {
+  font-size: 0.80em;
+}
+
+.marginnote > code,
+.sidenote > code {
+  font-size: 1rem;
+}
+
+pre.code {
+  font-size: 0.9rem;
+  width: 52.5%;
+  margin-left: 2.5%;
+  overflow-x: auto;
+}
+
+pre.code.fullwidth {
+  width: 90%;
+}
+
 .sr {
   position: absolute!important;
   clip: rect(0 0 0 0);
