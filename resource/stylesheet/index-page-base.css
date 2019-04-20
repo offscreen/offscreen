@@ -149,6 +149,12 @@ blockquote footer {
   text-align: right
 }
 
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1.0rem;
+  line-height: 1.42;
+}
+
 .sr {
   position: absolute!important;
   clip: rect(0 0 0 0);
