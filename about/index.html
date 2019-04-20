@@ -20,6 +20,7 @@
     <link href="/copyright/" rel="license">
     <link as="style" rel="preload" href="/resource/font/et-book.css">
     <link as="style" rel="preload" href="/resource/stylesheet/index-page-base.css">
+    <link as="style" rel="preload" href="/resource/stylesheet/highlightjs.css">
     <script src="/resource/script/meta-link.js"></script>
     <link as="script" rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     <link as="script" rel="preload" href="/resource/script/ga.js">
@@ -67,6 +68,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="/resource/script/ga.js"></script>
     <script src="/resource/script/url-form-field.js"></script>
+    <script src="/resource/script/highlight.js"></script>
+    <script>
+        if (window.hljs) {
+            hljs.configure({languages: []});
+            hljs.initHighlightingOnLoad();
+            if (document.readyState && document.readyState === "complete") {
+                window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+            }
+        }
+    </script>
 </head>
 <body>
 <article>

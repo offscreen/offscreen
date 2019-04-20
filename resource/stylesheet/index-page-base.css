@@ -153,6 +153,7 @@ code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 1.0rem;
   line-height: 1.42;
+  white-space: pre;
 }
 
 h1 > code,
