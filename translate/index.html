@@ -243,11 +243,13 @@
         (function() {
             var b = document.getElementById('t');
             b.onclick = function() {
-                window.open('https://translate.google.com/translate?u=' + encodeURIComponent(location.href) + '&langpair=' + document.getElementById('sl').value + '%7C' + document.getElementById('tl').value + '&hl=en');
+                window.open('https://translate.google.com/translate?hl=en&sl=' + document.getElementById('sl').value + '&tl=' + document.getElementById('tl').value + '&u=' + encodeURIComponent(location.href) + '');
                 return false;
             };
         })();
     </script>
+
+
 
 
 
