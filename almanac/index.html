@@ -315,7 +315,7 @@
         (function() {
             var b = document.getElementById('o');
             o.onclick = function() {
-                window.open(encodeURIComponent(location.protocol + '//' + location.host) + '/' + document.getElementById('a').value);
+                window.open('/' + document.getElementById('a').value);
                 return false;
             };
         })();
