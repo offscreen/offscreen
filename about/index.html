@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -71,119 +72,176 @@
     <script async src="/resource/script/ga.js"></script>
     <script src="/resource/script/url-form-field.js"></script>
 </head>
+
 <body>
-<article>
-    <!-- Header of Content -->
     <header>
-        <hgroup>
-            <h1>About&ndash;Offscreen Space</h1>
-            <h3>Everything Invisible Has power in Everything Visible</h3>
-        </hgroup>
+        <h1><a href="/">Offscreen Space</a></h1>
+        <p>Everything Invisible Has Power in Everything Visible</p>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/book/">Book</a></li>
+                <li><a href="/journal" />Journal</a></li>
+                <li><a href="/magazine/">Magazine</a></li>
+                <li><a href="/bulletin/">bulletin</a></li>
+                <li><a href="/article/">Article</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Offscreen Space Content -->
-    <section>
-        <p>Hello, welcome at <em>Offscreen Space</em> weblog. This site is made not for plagiarism, but rather to make it easier for international readers to translate existing canonical texts into their language. Solely just for study. All content on this site belongs to the authors, and copyrights remain in their hands. All content on this blog is not commercial. It is prohibited to copy and paste this content on a site with the intention to cash it in an illegal manner, for example by placing advertisements and so on. Very unclean. This site has analytic, and continues to be monitored regularly.</p>
-        <p>Next is how to manually convert <code>.pdf</code> to <code>.doc</code> to <code>HTML5</code>:</p>
-        <p><data class="p-rating rating" value="5">★★★★★</data></p>
-        <h3>Note Before Upload Your Book to Translate</h3>
-        <p>In <code>Bracket</code>, <code>cinema </code> (with one space after the word) replace with <code>&lt;span  class="notranslate" translate="no"&gt;cinema&lt;/span&gt; </code> (with one space after <code>span</code> tag).</p>
-        <p>For sensitive text: <code>h1-h6</code>, <code>div</code>, <code>p</code>, <code>span</code>, etc, for example on film and novel title, add <code>class="notranslate" translate="no"</code> with specific HTML tag.</p>
-        <p>Example:</p>
-        <p><code>&lt;h2&gt;Gaze&lt;/h2&gt;</code> (before)</p>
-        <p><code>&lt;h2 class="notranslate" translate="no"&gt;Gaze&lt;/h2&gt;</code> (after)</p>
-        <h3>From <code>.pdf</code> to <code>.doc</code> (Without Hypen)</h3>
-        <p>For <code>^p</code>, this note:</p>
-        <ol>
-            <li>Select text on Portable Document Format file.</li>
-            <li>Press <code>Ctrl+C</code>.</li>
-            <li>Go to rich text editor on Microsoft Word.</li>
-            <li>Press <code>Ctrl+V</code>.</li>
-            <li>Mark with <code>===</code> on any paragraph as in the original text.</li>
-            <li>Press <code>Ctrl+A</code>.</li>
-            <li>Press <code>Ctrl+H</code>.</li>
-            <li>See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>^p</code> (<code>paragraph mark</code>).</li>
-            <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code> </code> (<code>space bar</code>) only once.</li>
-            <li>Click <code>Replace All</code>.</li>
-            <li>Then: See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>=== </code> (<code>with one space bar</code>).</li>
-            <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
-            <li>Click <code>Replace All</code>.</li>
-        </ol>
-        <h3>From <code>.pdf</code> to <code>.doc</code> (With Hypen)</h3>
-        <p>For <code>-^p</code>, this note:</p>
-        <ol>
-            <li>Select text on Portable Document Format file.</li>
-            <li>Press <code>Ctrl+C</code>.</li>
-            <li>Go to rich text editor on Microsoft Word.</li>
-            <li>Press <code>Ctrl+V</code>.</li>
-            <li>Mark with <code>===</code> on any paragraph as in the original text.</li>
-            <li>Press <code>Ctrl+A</code>.</li>
-            <li>Press <code>Ctrl+H</code>.</li>
-            <li>See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>-^p</code> (<code>hyphen with paragraph mark</code>).</li>
-            <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
-            <li>Click <code>Replace All</code>.</li>
-            <li>And, see your document, mark with <code>===</code> on any paragraph as in the original text.</li>
-            <li>Press <code>Ctrl+A</code>.</li>
-            <li>Press <code>Ctrl+H</code>.</li>
-            <li>Then. See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>^p</code> (<code>paragraph mark</code>).</li>
-            <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code> </code> (<code>space bar</code>) only once.</li>
-            <li>Click <code>Replace All</code>.</li>
-            <li>And, then. See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>=== </code> (<code>with one space bar</code>).</li>
-            <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
-            <li>Click <code>Replace All</code>.</li>
-        </ol>
-        <h3>Convert <code>.doc</code> to <code>HTML5</code></h3>
-        <p>The key is <code>^&amp;</code>: as <code><em>Italic</em></code> or <code><strong>Bold</strong></code> value.</p>
-        <p>To <code><em>Italic</em></code>:</p>
-        <ol>
-            <li><code>Ctrl+A</code></li>
-            <li><code>Ctrl+H</code></li>
-            <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Italic</code></li>
-            <li><code>Replace with</code> &gt; <code>&lt;em&gt;^&amp;&lt;/em&gt;</code></li>
-            <li><code>Replace All</code></li>
-          </ol>
-        <p><code>CAUTION</code> to normalize:</p>
-        <ol>
-            <li><code>Ctrl+A</code></li>
-            <li><code>Ctrl+H</code></li>
-            <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
-        </ol>
-        <p>To <code><strong>Bold</strong></code>:</p>
-        <ol>
-            <li><code>Ctrl+A</code></li>
-            <li><code>Ctrl+H</code></li>
-            <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Bold</code></li>
-            <li><code>Replace with</code> &gt; <code>&lt;strong&gt;^&amp;&lt;/strong&gt;</code></li>
-            <li><code>Replace All</code></li>
-        </ol>
-        <p><code>CAUTION</code> to normalize:</p>
-        <ol>
-            <li><code>Ctrl+A</code></li>
-            <li><code>Ctrl+H</code></li>
-            <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
-        </ol>
-        <p>To <code>Paragraph</code>:</p>
-        <ol>
-            <li><code>Ctrl+A</code></li>
-            <li><code>Ctrl+H</code></li>
-            <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
-            <li><code>Find</code> &gt; <code>^p</code></li>
-            <li><code>Replace with</code> &gt; <code>&lt;/p&gt;^p&lt;p&gt;</code></li>
-            <li>Hit <code>Ctrl+I</code> twice (with the cursor still in the <code>Replace with</code> box)</li>
-            <li>Hit <code>Ctrl+B</code> twice (with the cursor still in the <code>Replace with</code> box)</li>
-            <li><em>To make sure your paragraph tags don't inherit any bold/italic formatting from the previous text.</em></li>
-            <li><code>Replace All</code></li>
-            <li>Manually <code>type</code> an opening tag <code>&lt;p&gt;</code> at the beginning of the first paragraph.</li>
-            <li>Manually <code>delete</code> one from the end of the final paragraph.</li>
-        </ol>
-        <p>Job done.</p>
-    </section>
-    <!-- Offscreen Space Footer -->
-    <footer class="notranslate" translate="no">
-        <hr>
-        <p><small><a href="/"><em>Offscreen Space</em></a></small></p>
-        <p><small>Copyright &copy; 28 Maret 2019&ndash;<span id='now_d'></span> Offscreen Space</small></p>
-    </footer>
-</article>
-<script src="/resource/script/date.js"></script>
+    <main>
+        <article id="page-2019">
+            <header>
+                <h2>About&ndash;Offscreen Space</h2>
+            </header>
+            <div>
+                <div class="t-o-c" id="t-o-c:1">
+                    <div class="t-o-c-header">
+                        <h3>Table of Content</h3>
+                    </div>
+                    <div class="t-o-c-body">
+                        <ol>
+                            <li id="a:1.1"><a href="#reference:objective">Objective</a> <span class="t-o-c:a"></span></li>
+                            <li id="a:1.2"><a href="#reference:feature">Feature</a> <span class="t-o-c:a"></span></li>
+                            <li id="a:1.3"><a href="#reference:dependency">Dependency</a> <span class="t-o-c:a"></span></li>
+                            <li id="a:1.4"><a href="#reference:preparation">Preparation</a> <span class="t-o-c:a"></span></li>
+                            <li id="a:1.5"><a href="#reference:credit">Credit</a> <span class="t-o-c:a"></span></li>
+                            <li id="a:1.6"><a href="#reference:site-theme">Site Theme</a> <span class="t-o-c:a"></span></li>
+                        </ol>
+                    </div>
+                </div>
+                <blockquote>
+                    <p>WTF is Mecha?</p>
+                </blockquote>
+                <p>Hello, welcome at <em>Offscreen Space</em> weblog. This site is made not for plagiarism, but rather to make it easier for international readers to translate existing canonical texts into their language. Solely just for study. All content on this site belongs to the authors, and copyrights remain in their hands. All content on this blog is not commercial. It is prohibited to copy and paste this content on a site with the intention to cash it in an illegal manner, for example by placing advertisements and so on. Very unclean. This site has analytic, and continues to be monitored regularly.</p>
+                <p>Next is how to manually convert <code>.pdf</code> to <code>.doc</code> to <code>HTML5</code>:</p>
+                <p><data class="p-rating rating" value="5">★★★★★</data></p>
+                <h3>Note Before Upload Your Book to Translate</h3>
+                <p>In <code>Bracket</code>, <code>cinema </code> (with one space after the word) replace with <code>&lt;span class="notranslate" translate="no"&gt;cinema&lt;/span&gt; </code> (with one space after <code>span</code> tag).</p>
+                <p>For sensitive text: <code>h1-h6</code>, <code>div</code>, <code>p</code>, <code>span</code>, etc, for example on film and novel title, add <code>class="notranslate" translate="no"</code> with specific HTML tag.</p>
+                <p>Example:</p>
+                <p><code>&lt;h2&gt;Gaze&lt;/h2&gt;</code> (before)</p>
+                <p><code>&lt;h2 class="notranslate" translate="no"&gt;Gaze&lt;/h2&gt;</code> (after)</p>
+                <h3>From <code>.pdf</code> to <code>.doc</code> (Without Hypen)</h3>
+                <p>For <code>^p</code>, this note:</p>
+                <ol>
+                    <li>Select text on Portable Document Format file.</li>
+                    <li>Press <code>Ctrl+C</code>.</li>
+                    <li>Go to rich text editor on Microsoft Word.</li>
+                    <li>Press <code>Ctrl+V</code>.</li>
+                    <li>Mark with <code>===</code> on any paragraph as in the original text.</li>
+                    <li>Press <code>Ctrl+A</code>.</li>
+                    <li>Press <code>Ctrl+H</code>.</li>
+                    <li>See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>^p</code> (<code>paragraph mark</code>).</li>
+                    <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code> </code> (<code>space bar</code>) only once.</li>
+                    <li>Click <code>Replace All</code>.</li>
+                    <li>Then: See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>=== </code> (<code>with one space bar</code>).</li>
+                    <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
+                    <li>Click <code>Replace All</code>.</li>
+                </ol>
+                <h3>From <code>.pdf</code> to <code>.doc</code> (With Hypen)</h3>
+                <p>For <code>-^p</code>, this note:</p>
+                <ol>
+                    <li>Select text on Portable Document Format file.</li>
+                    <li>Press <code>Ctrl+C</code>.</li>
+                    <li>Go to rich text editor on Microsoft Word.</li>
+                    <li>Press <code>Ctrl+V</code>.</li>
+                    <li>Mark with <code>===</code> on any paragraph as in the original text.</li>
+                    <li>Press <code>Ctrl+A</code>.</li>
+                    <li>Press <code>Ctrl+H</code>.</li>
+                    <li>See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>-^p</code> (<code>hyphen with paragraph mark</code>).</li>
+                    <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
+                    <li>Click <code>Replace All</code>.</li>
+                    <li>And, see your document, mark with <code>===</code> on any paragraph as in the original text.</li>
+                    <li>Press <code>Ctrl+A</code>.</li>
+                    <li>Press <code>Ctrl+H</code>.</li>
+                    <li>Then. See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>^p</code> (<code>paragraph mark</code>).</li>
+                    <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code> </code> (<code>space bar</code>) only once.</li>
+                    <li>Click <code>Replace All</code>.</li>
+                    <li>And, then. See <code>Find & Replace</code> form, in <code>Find what</code> input, type <code>=== </code> (<code>with one space bar</code>).</li>
+                    <li>See <code>Find & Replace</code> form, in <code>replace whit</code> input, type <code>^p</code> (<code>paragraph mark</code>) only once.</li>
+                    <li>Click <code>Replace All</code>.</li>
+                </ol>
+                <h3>Convert <code>.doc</code> to <code>HTML5</code></h3>
+                <p>The key is <code>^&amp;</code>: as <code><em>Italic</em></code> or <code><strong>Bold</strong></code> value.</p>
+                <p>To <code><em>Italic</em></code>:</p>
+                <ol>
+                    <li><code>Ctrl+A</code></li>
+                    <li><code>Ctrl+H</code></li>
+                    <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Italic</code></li>
+                    <li><code>Replace with</code> &gt; <code>&lt;em&gt;^&amp;&lt;/em&gt;</code></li>
+                    <li><code>Replace All</code></li>
+                </ol>
+                <p><code>CAUTION</code> to normalize:</p>
+                <ol>
+                    <li><code>Ctrl+A</code></li>
+                    <li><code>Ctrl+H</code></li>
+                    <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
+                </ol>
+                <p>To <code><strong>Bold</strong></code>:</p>
+                <ol>
+                    <li><code>Ctrl+A</code></li>
+                    <li><code>Ctrl+H</code></li>
+                    <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Bold</code></li>
+                    <li><code>Replace with</code> &gt; <code>&lt;strong&gt;^&amp;&lt;/strong&gt;</code></li>
+                    <li><code>Replace All</code></li>
+                </ol>
+                <p><code>CAUTION</code> to normalize:</p>
+                <ol>
+                    <li><code>Ctrl+A</code></li>
+                    <li><code>Ctrl+H</code></li>
+                    <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
+                </ol>
+                <p>To <code>Paragraph</code>:</p>
+                <ol>
+                    <li><code>Ctrl+A</code></li>
+                    <li><code>Ctrl+H</code></li>
+                    <li><code>Find</code> &gt; <code>Format</code> &gt; <code>Font</code> &gt; <code>Font style</code> &gt; <code>Regular</code></li>
+                    <li><code>Find</code> &gt; <code>^p</code></li>
+                    <li><code>Replace with</code> &gt; <code>&lt;/p&gt;^p&lt;p&gt;</code></li>
+                    <li>Hit <code>Ctrl+I</code> twice (with the cursor still in the <code>Replace with</code> box)</li>
+                    <li>Hit <code>Ctrl+B</code> twice (with the cursor still in the <code>Replace with</code> box)</li>
+                    <li><em>To make sure your paragraph tags don't inherit any bold/italic formatting from the previous text.</em></li>
+                    <li><code>Replace All</code></li>
+                    <li>Manually <code>type</code> an opening tag <code>&lt;p&gt;</code> at the beginning of the first paragraph.</li>
+                    <li>Manually <code>delete</code> one from the end of the final paragraph.</li>
+                </ol>
+                <p>Job done.</p>
+            </div>
+            <footer>
+                <ul class="metas">
+                    <li>
+                        <span>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+                            </svg>
+                            <span>28 Maret 2019&ndash;<span id='now_d'></span></span>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path>
+                            </svg>
+                            <span>Copyright &copy; Offscreen Space</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#" rel="prev">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" rel="next">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </article>
+    </main>
+    <script src="/resource/script/date.js"></script>
 </body>
 </html>
