@@ -154,6 +154,10 @@
                     <option value="bela-balazs">Bela Balazs</option>
                     <option value="britta-sjogren">Britta Sjogren</option>
                 </select>
+                <select id="b">
+                    <option value="theory-of-the-film">theory-of-the-film</option>
+                    <option value="into-the-vortex">into-the-vortex</option>
+                </select>
                 <button id="o">Open</button>
             </div>
             <footer>
@@ -315,7 +319,7 @@
         (function() {
             var b = document.getElementById('o');
             o.onclick = function() {
-                window.open('/' + document.getElementById('a').value);
+                window.open('/' + document.getElementById('a').value + '/' + document.getElementById('b').value'');
                 return false;
             };
         })();
