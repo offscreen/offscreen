@@ -310,8 +310,8 @@
         	</fieldset>
             <fieldset>
                 <legend class="notranslate" translate="no">Uniform Resource Locator</legend>
-                <input id="inputURL" name="u" placeholder="URL to translate" required="required" type="url">
-                <label for="inputURL" class="notranslate" translate="no" id="getURL" title="Click to copy Uniform Resource Locator into input form."><u>Get URL</u></label>
+                <label for="inputURL" class="sr notranslate" translate="no">Uniform Resource Locator</label>
+                <input id="inputURL" name="u" placeholder="URL to translate" required="required" type="url" title="Click to copy Uniform Resource Locator into input form.">
             </fieldset>
             <fieldset>
                 <legend class="notranslate" translate="no">Submit Now</legend>
@@ -328,12 +328,6 @@
         <p>Finally, part of this book's dedication is to my brother, Martin, whose love of <span class="notranslate" translate="no">cinema</span> will always be a precious memory for me.</p>
         <p class="notranslate" translate="no">PATRICK FUERY</p>
     </section>
-    <!-- Footnote
-    <section>
-    	<ol>
-    		<li></li>
-    	</ol>
-    </section> -->
     <!-- Offscreen Space Footer -->
     <footer class="notranslate ot dp" translate="no">
         <hr>
@@ -341,7 +335,7 @@
         <p><small>Copyright &copy; <span id='now_d'></span> Patrick Fuery</small></p>
     </footer>
 </article>
-<script>$("#getURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
+<script>$("#inputURL").click(function(){var path=window.location.href;$("#inputURL").val(path);});</script>
 <script src="/resource/script/date.js"></script>
 </body>
 </html>
