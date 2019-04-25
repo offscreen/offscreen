@@ -149,6 +149,13 @@
                 </blockquote>
             </div>
             -->
+            <div>
+                <select id="a">
+                    <option value="bela-balazs">Bela Balazs</option>
+                    <option value="britta-sjogren">Britta Sjogren</option>
+                </select>
+                <button id="o">Open</button>
+            </div>
             <footer>
                 <ul class="metas">
                     <li>
@@ -304,5 +311,14 @@
         </aside>
     </main>
     <script src="/resource/script/date.js"></script>
+    <script>
+        (function() {
+            var b = document.getElementById('o');
+            o.onclick = function() {
+                window.open(encodeURIComponent(location.protocol + '//' + location.host) + '/' +  + document.getElementById('a').value);
+                return false;
+            };
+        })();
+    </script>
 </body>
 </html>
