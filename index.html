@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
+<html class="has-css has-page is-$ is-art is-home is-page" dir="ltr" lang="en-us">
+<head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <!-- <base href="/"> -->
@@ -18,8 +18,10 @@
     <meta content="en" name="language">
     <link href="/humans.txt" rel="author" type="text/plain">
     <link href="/copyright/" rel="license">
-    <link as="style" rel="preload" href="/resource/font/et-book.css">
-    <link as="style" rel="preload" href="/resource/stylesheet/index-page-base.css">
+    <link as="style" rel="preload" href="/resource/stylesheet/mecha-comment.css">
+    <link as="style" rel="preload" href="/resource/stylesheet/mecha-main.css">
+    <link as="style" rel="preload" href="/resource/stylesheet/mecha-nord.css">
+    <link as="style" rel="preload" href="/resource/stylesheet/mecha-t-o-c.css">
     <script src="/resource/script/meta-link.js"></script>
     <link as="script" rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     <link as="script" rel="preload" href="/resource/script/ga.js">
@@ -30,9 +32,10 @@
     <meta content="latitude;longitude" name="geo.position">
     <meta content="country[-state]" name="geo.region">
     <meta name="geo.placename" content="city/town">
-    <link rel="stylesheet" href="/resource/font/et-book.css">
-    <link rel="stylesheet" href="/resource/stylesheet/index-page-base.css">
-    <link rel="stylesheet" href="/resource/stylesheet/print.css" media="print" title="print">
+    <link href="/resource/stylesheet/mecha-comment.css" rel="stylesheet">
+    <link href="/resource/stylesheet/mecha-main.css" rel="stylesheet">
+    <link href="/resource/stylesheet/mecha-nord.css" rel="stylesheet">
+    <link href="/resource/stylesheet/mecha-t-o-c.css" rel="stylesheet">
     <link href="/resource/image/icon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <meta content="telephone=no" name="format-detection">
     <link href="/path/to/launch.png" rel="apple-touch-startup-image">
@@ -67,29 +70,64 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="/resource/script/ga.js"></script>
     <script src="/resource/script/url-form-field.js"></script>
+    <style media="screen">
+        html {
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%;
+            -webkit-tap-highlight-color:transparent;
+            -webkit-tap-highlight-color:transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none
+        }
+        @nav-background: #000;
+        @nav-color: #fff;
+        @nav-color-hover: #999;
+
+        nav {
+            background: @nav-background;
+            color: @nav-color;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                &:focus,
+                &:hover {
+                    color: @nav-color-hover
+                }
+            }
+        }
+        svg {
+            fill: #798ba2;
+            cursor: pointer;
+        }
+        svg:hover {
+            fill: #bdb8af;
+        }
+    </style>
 </head>
 <body>
-<article>
-    <!-- Header of Content -->
-    <header>
-        <hgroup>
-            <h1>Offscreen Space</h1>
-            <h3>Everything Invisible Has Power in Everything Visible</h3>
-        </hgroup>
-    </header>
-    <!-- Offscreen Space Content -->
-    <section>
-        <p>To ask about this website, <em>Offscreen Space</em>, please send an email to <a href="mailto:hi@offscreen.space">hi@offscreen.space</a>.</p>
-        <p>Regards, </p>
-        <p><em>Offscreen Space: Everything Invisible Has power in Everything Visible</em></p>
-    </section>
-    <!-- Offscreen Space Footer -->
-    <footer class="notranslate" translate="no">
-        <hr>
-        <p><small><a href="/"><em>Offscreen Space</em></a></small></p>
-        <p><small>Copyright &copy; 28 Maret 2019&ndash;<span id='now_d'></span> Offscreen Space</small></p>
+    <main>
+        <section>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                <title>Offscreen Space</title>
+                <path d="M18 36h-4v28h4c1.1 0 2-0.9 2-2v-24c0-1.1-0.9-2-2-2z"></path>
+                <path d="M46 36c-1.1 0-2 0.9-2 2v24c0 1.1 0.9 2 2 2h4v-28h-4z"></path>
+                <path d="M64 32c0-17.673-14.327-32-32-32s-32 14.327-32 32c0 3.838 0.677 7.518 1.916 10.928-1.217 2.075-1.916 4.492-1.916 7.072 0 7.053 5.215 12.887 12 13.857v-27.714c-1.995 0.285-3.854 0.99-5.485 2.024-0.337-1.67-0.515-3.398-0.515-5.167 0-14.359 11.641-26 26-26s26 11.641 26 26c0 1.77-0.177 3.498-0.514 5.169-1.631-1.034-3.491-1.74-5.486-2.026v27.715c6.784-0.971 12-6.805 12-13.857 0-2.58-0.699-4.996-1.916-7.071 1.239-3.41 1.916-7.091 1.916-10.929z"></path>
+            </svg>
+            <article>
+                <h1>Offscreen Space</h1>
+                <p>Everything Invisible Has Power in Everything Visible</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 28 Maret 2019&ndash;<span id='now_d'></span> · Offscreen Space</p>
     </footer>
-</article>
-<script src="/resource/script/date.js"></script>
+    <script src="/resource/script/date.js"></script>
 </body>
 </html>
