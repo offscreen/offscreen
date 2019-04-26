@@ -585,6 +585,7 @@
         </section>
     </aside>
     <aside class="notranslate" translate="no">
+        <!-- Internet Search -->
         <section class="ot dp">
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Internet Search</legend>
@@ -592,6 +593,19 @@
                     <input type="search" name="q" placeholder="One or two words to search" required="required">
                     <button class="notranslate" translate="no" type="submit">Search</button>
                 </form>
+            </fieldset>
+        </section>
+    </aside>
+    <aside class="notranslate" translate="no">
+        <!-- Open Book -->
+        <section class="ot dp">
+            <fieldset class="notranslate" translate="no">
+                <legend class="notranslate" translate="no">Open Book Form</legend>
+                <label for="ab" class="notranslate" translate="no">Author:</label>
+                <input type="search" id="ab" class="notranslate" translate="no">
+                <label for="tb" class="notranslate" translate="no">Title:</label>
+                <input type="search" id="tb" class="notranslate" translate="no">
+                <button type="submit" id="ob" class="notranslate" translate="no">Open</button>
             </fieldset>
         </section>
     </aside>
@@ -621,6 +635,15 @@
     <script src="/resource/script/translate.js"></script>
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/date.js"></script>
+    <script>
+        (function() {
+            var obf = document.getElementById('ob');
+            obf.onclick = function() {
+                window.open('/' + document.getElementById('ab').value + '/' + document.getElementById('tb').value + '/');
+                return true;
+            };
+        })();
+    </script>
 </body>
 <!-- https://jsfiddle.net/samliew/xhYZb/ https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
 
