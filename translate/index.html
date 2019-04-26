@@ -367,28 +367,15 @@
             </svg>
         </span>
     </aside>
-    <aside class="text-finder ot dp" id="text-finder">
+    <aside class="notranslate text-finder ot dp" id="text-finder" translate="no">
         <form id="find" action="javascript:;">
-            <input type="text" required="required" placeholder="e.g. flexbox">
-            <button type="reset">&times;</button>
+            <input class="notranslate" translate="no" type="text" required="required" placeholder="e.g. flexbox">
+            <button class="notranslate" translate="no" type="reset">&times;</button>
         </form>
     </aside>
     <script src="/resource/script/translate.js"></script>
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/date.js"></script>
-    <script>
-        var header = document.getElementById('text-finder'),
-            currentPageYOffset = 0;
-        window.addEventListener("scroll", function() {
-            var Y = this.pageYOffset;
-            if (currentPageYOffset < Y) {
-                header.classList.remove('show');
-            } else if (currentPageYOffset > Y) {
-                header.classList.add('show');
-            }
-            currentPageYOffset = Y;
-        }, false);
-    </script>
 </body>
 <!-- https://jsfiddle.net/samliew/xhYZb/ https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
 
