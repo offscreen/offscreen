@@ -582,13 +582,13 @@ input[type="radio"] {
                 <option value="yo">Yoruba</option>
                 <option value="zu">Zulu</option>
             </select>
-            <a id="gt" href="#" class="notranslate" translate="no">Translate</a>
+            <button class="notranslate" id="gt" translate="no">Translate</button>
         </section>
     </aside>
     <script>
         (function() {
-            var a = document.getElementById('gt');
-            a.onclick = function() {
+            var b = document.getElementById('gt');
+            b.onclick = function() {
                 window.open('https://translate.google.com/translate?hl=en&sl=' + document.getElementById('sl').value + '&tl=' + document.getElementById('tl').value + '&u=' + encodeURIComponent(location.href) + '');
                 return false;
             };
