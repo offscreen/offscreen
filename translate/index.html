@@ -76,7 +76,7 @@
 </head>
 
 <body>
-    <aside class="ot dp">
+    <aside class="ot dp" id="header">
         <form id="text-finder" class="text-finder" action="javascript:;">
             <input type="text" placeholder="e.g. flexbox">
             <input type="reset" value="&times;">
@@ -377,17 +377,14 @@
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/date.js"></script>
     <script>
-        var header = document.querySelector('header'),
-            footer = document.querySelector('footer'),
+        var header = document.getElementById('header'),
             currentPageYOffset = 0;
         window.addEventListener("scroll", function() {
             var Y = this.pageYOffset;
             if (currentPageYOffset < Y) {
                 header.classList.remove('show');
-                footer.classList.add('show');
             } else if (currentPageYOffset > Y) {
                 header.classList.add('show');
-                footer.classList.remove('show');
             }
             currentPageYOffset = Y;
         }, false);
