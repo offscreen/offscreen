@@ -326,14 +326,12 @@
     </article>
     <script>
         (function() {
-            var a = document.getElementById('tg');
+            var a = document.getElementById('tg'),
+            var b = document.getElementById('tb');
             a.onclick = function() {
                 window.open('https://translate.google.com/translate?hl=en&sl=' + document.getElementById('sl').value + '&tl=' + document.getElementById('tl').value + '&u=' + encodeURIComponent(location.href) + '');
                 return false;
             };
-        })();
-        (function() {
-            var b = document.getElementById('tb');
             b.onclick = function() {
                 window.open('https://www.translatetheweb.com/?from=' + document.getElementById('sl').value + '&to=' + document.getElementById('tl').value + '&dl=en&a=' + encodeURIComponent(location.href) + '');
                 return false;
