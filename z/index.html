@@ -4,30 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <title></title>
-    <style type="text/css">
-        #f1 input[type=submit] {
-            display: none;
-        }
-
-        .t1 {
-            border: 2px solid orange;
-            padding: 1px 5px;
-        }
-    </style>
+    <title>JavaScript Find-on-page</title>
 </head>
 
 <body>
-    <form name="f1" id="f1" action="#">
-        <strong>JavaScript Find-on-page:</strong>
-        <br />
-        <input type="search" class="t1" name="t1" value="">
-        <input type="submit" name="b1" value="Find">
-        <br />
-        <small>Type a word/phrase above and press enter to search the page.</small>
+    <form id="tff" action="#">
+        <input type="search" class="iff">
+        <button type="submit">Find</button>
     </form>
 
     <h3>Sample Text:</h3>
+    <small>Type a word/phrase above and press enter to search the page.</small>
     <p>Take this kiss upon the brow!
         And, in parting from you now,
         Thus much let me avow--
@@ -91,8 +78,8 @@
             return;
         };
 
-        document.getElementById('f1').onsubmit = function() {
-            findString(this.t1.value);
+        document.getElementById('tff').onsubmit = function() {
+            findString(this.iff.value);
             return false;
         };
     </script>
