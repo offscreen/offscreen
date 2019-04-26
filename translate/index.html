@@ -356,13 +356,15 @@
             <form action='https://translate.google.com' class='notranslate' method='get' target='_blank' translate='no'>
                 <input name='#view' type='hidden' value='home'>
                 <input name='op' type='hidden' value='translate'>
+
                 <input name='sl' type='hidden' value='en'>
                 <input id='arabic' name='tl' type='radio' value='ar'><label class='notranslate' for='arabic' translate='no'>Arabic</label>
                 <input id='french' name='tl' type='radio' value='fr' /><label class='notranslate' for='french' translate='no'>French</label>
                 <input checked='checked' id='indonesian' name='tl' type='radio' value='id' /><label class='notranslate' for='indonesian' translate='no'>Indonesian</label>
                 <input id='javanese' name='tl' type='radio' value='jw' /><label class='notranslate' for='javanese' translate='no'>Javanese</label>
                 <input id='rusian' name='tl' type='radio' value='ru' /><label class='notranslate' for='rusian' translate='no'>Rusian</label>
-                <input name='text' placeholder='One or two words to translate' required='required' type='search'>
+                <textarea rows="4" placeholder='words to translate' required='required'></textarea>
+                <input name='text' placeholder='words to translate' required='required' type='search'>
                 <button class='notranslate' translate='no' type='submit'>Translate</button>
             </form>
         </fieldset>
