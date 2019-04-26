@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <form id="tff" action="#">
-        <input type="search" class="iff">
+    <form id="f1" action="#">
+        <input type="search" class="t1">
         <button type="submit">Find</button>
     </form>
 
@@ -78,8 +78,8 @@
             return;
         };
 
-        document.getElementById('tff').onsubmit = function() {
-            findString(this.iff.value);
+        document.getElementById('f1').onsubmit = function() {
+            findString(this.t1.value);
             return false;
         };
     </script>
