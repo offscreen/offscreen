@@ -390,6 +390,12 @@
                 }, 'slow');
                 return false;
             });
+            $('#move-down').click(function() {
+                $('html, body').animate({
+                    scrollBottom: 0
+                }, 'slow');
+                return false;
+            });
         });
     </script>
 </body>
