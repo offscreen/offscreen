@@ -39,10 +39,7 @@ body {
 
 @media (max-width: 786px) {
   body {
-    margin-top: 4em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto
+    margin: 4em auto;
   }
 }
 
