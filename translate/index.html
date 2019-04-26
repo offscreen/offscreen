@@ -76,6 +76,12 @@
 </head>
 
 <body>
+    <aside class="ot dp">
+        <form id="text-finder" class="text-finder" action="javascript:;">
+            <input type="text" placeholder="e.g. flexbox">
+            <input type="reset" value="&times;">
+        </form>
+    </aside>
     <aside class="move ot dp" id="move">
         <span class="move-down" id="move-down" title="Move Down">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -92,12 +98,6 @@
                 <path d="M10 24h2v3h-2v-3z"></path>
             </svg>
         </span>
-    </aside>
-    <aside class="ot dp">
-        <form id="text-finder" class="text-finder" action="javascript:;">
-            <input type="text" placeholder="e.g. flexbox">
-            <input type="reset" value="&times;">
-        </form>
     </aside>
     <main>
         <article>
@@ -376,6 +376,22 @@
     <script src="/resource/script/translate.js"></script>
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/date.js"></script>
+    <script>
+        var header = document.querySelector('header'),
+            footer = document.querySelector('footer'),
+            currentPageYOffset = 0;
+        window.addEventListener("scroll", function() {
+            var Y = this.pageYOffset;
+            if (currentPageYOffset < Y) {
+                header.classList.remove('show');
+                footer.classList.add('show');
+            } else if (currentPageYOffset > Y) {
+                header.classList.add('show');
+                footer.classList.remove('show');
+            }
+            currentPageYOffset = Y;
+        }, false);
+    </script>
 </body>
 <!-- https://jsfiddle.net/samliew/xhYZb/ https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
 
