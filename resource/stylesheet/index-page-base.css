@@ -227,7 +227,6 @@ pre.code.fullwidth {
   user-select: none
 }
 
-.move-down {
-  cursor: pointer;
+.move {
   float: right
 }
