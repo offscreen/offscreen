@@ -260,6 +260,94 @@
   -webkit-animation-name: flip;
   animation-name: flip;
 }
+
+.sliding-menu {
+  background-color: rgb(40, 38, 38);
+  visibility: hidden;
+  position: fixed;
+  overflow: hidden;
+}
+
+.sliding-menu a, .sliding-menu p {
+  font-family: Lato;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.sliding-menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.sliding-menu li {
+  margin: 40px auto 40px auto;
+}
+
+.sliding-menu hr {
+  width: 50%;
+  min-width: 100px;
+  border-color: rgb(18, 209, 234);
+}
+
+.exit {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.left-exit, .top-exit, .bottom-exit {
+  top: 20px;
+  right: 40px;
+}
+
+.right-exit {
+  top: 20px;
+  left: 40px;
+}
+
+.buttons-container {
+  max-width: 700px;
+  margin: 0 auto 0 auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.note {
+  position: absolute;
+  width: 250px;
+}
+
+.left-note {
+  bottom: 3%;
+  left: 5%;
+}
+
+.right-note {
+  bottom: 10%;
+  right: 5%;
+}
+
+.top-note {
+  top: 3%;
+  right: 5%;
+}
+
+.topleft-note {
+  position: fixed;
+  top: 75px;
+  left: 45px;
+}
+
+.bottom-note {
+  bottom: 5%;
+  right: 3%;
+}
     </style>
 </head>
 
