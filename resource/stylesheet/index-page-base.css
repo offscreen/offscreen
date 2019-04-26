@@ -228,7 +228,7 @@ pre.code.fullwidth {
 }
 
 .move {
-  float: right
+  display: inline-block;
 }
 
 .move-up, .move-down {
