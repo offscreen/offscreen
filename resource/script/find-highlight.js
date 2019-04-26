@@ -55,7 +55,7 @@
             $viewport = $('html, body');
         $field.on("keyup", function() {
             $area.removeHighlight().highlight(this.value); // Highlight text inside `$area` on keyup
-            $viewport.scrollTop($area.find('span.highlight').first().offset().top - 50); // Jump the viewport to the first highlighted term
+            $viewport.scrollTop($area.find('span.highlight').offset().top - 50); // Jump the viewport to the first highlighted term
         });
         $clear.on("click", function() {
             $area.removeHighlight(); // Remove all highlight inside `$area`
