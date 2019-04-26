@@ -33,7 +33,7 @@ function findString(str) {
     return;
 };
 
-document.getElementById('text-finder').onsubmit = function() {
+document.getElementById('f1').onsubmit = function() {
     findString(this.t1.value);
     return false;
 };
