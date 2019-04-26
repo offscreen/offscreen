@@ -104,8 +104,8 @@
 
     <aside class="notranslate" translate="no">
         <!-- Translate Form -->
-        <section id="gt-l" class="ot dp">
-            <p id="gt-l-src"><label for="sl" class="notranslate" translate="no">From:</label> <select id="sl" class="notranslate" translate="no">
+        <section class="ot dp">
+            <p><label for="sl" class="notranslate" translate="no">From:</label> <select id="sl" class="notranslate" translate="no">
                     <option value="auto">Detect language</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
                     <option value="af">Afrikaans</option>
@@ -212,7 +212,7 @@
                     <option value="yo">Yoruba</option>
                     <option value="zu">Zulu</option>
                 </select></p>
-            <p id=gt-l-tgt><label for="tl" class="notranslate" translate="no">To:</label> <select id="tl" class="notranslate" translate="no">
+            <p><label for="tl" class="notranslate" translate="no">To:</label> <select id="tl" class="notranslate" translate="no">
                     <option value="id">Indonesian</option>
                     <option value="en">English</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
@@ -321,12 +321,12 @@
                     <option value="yo">Yoruba</option>
                     <option value="zu">Zulu</option>
                 </select></p>
-            <p class="notranslate" translate="no"><a id="tg" href="#">Translate</a></p>
+            <p><a id="gt" href="#" class="notranslate" translate="no">Translate</a></p>
         </section>
     </aside>
     <script>
         (function() {
-            var a = document.getElementById('tg');
+            var a = document.getElementById('gt');
             a.onclick = function() {
                 window.open('https://translate.google.com/translate?hl=en&sl=' + document.getElementById('sl').value + '&tl=' + document.getElementById('tl').value + '&u=' + encodeURIComponent(location.href) + '');
                 return false;
