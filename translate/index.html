@@ -394,15 +394,12 @@
         $(function() {
             $('#move-down').click(function() {
                 $('html, body').animate({
-                    scrollTop: 0
+                    scrollTop: $(document).height()
                 }, 'slow');
                 return false;
             });
         });
     </script>
 </body>
-
-
 <!-- https://jsfiddle.net/samliew/xhYZb/ -->
-
 </html>
