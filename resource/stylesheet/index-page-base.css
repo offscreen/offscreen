@@ -230,3 +230,7 @@ pre.code.fullwidth {
 .move {
   float: right
 }
+
+.move-up, .move-down {
+  cursor: pointer;
+}
