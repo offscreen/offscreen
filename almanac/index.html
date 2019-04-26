@@ -110,12 +110,6 @@
                                 <input class="block input" id="b" placeholder="theory-of-the-film" required type="text">
                             </span>
                         </p>
-                        <p class="form-comment-input form-comment-input:link">
-                            <label for="c">Chapter</label>
-                            <span>
-                                <input class="block input" id="c" placeholder="i" required type="text">
-                            </span>
-                        </p>
                         <p class="form-comment-button form-comment-button:state">
                             <label for="o"></label>
                             <span>
@@ -318,7 +312,7 @@
         (function() {
             var b = document.getElementById('o');
             o.onclick = function() {
-                window.open('/' + document.getElementById('a').value + '/' + document.getElementById('b').value + '/' + document.getElementById('c').value + '/');
+                window.open('/' + document.getElementById('a').value + '/' + document.getElementById('b').value + '/');
                 return false;
             };
         })();
