@@ -129,7 +129,7 @@
             <fieldset>
                 <legend>Google Translate</legend>
                 <label for="sl" class="notranslate" translate="no">From:</label>
-                <select id="sl" class="notranslate" translate="no">
+                <select id="sl" class="notranslate" translate="no" required="required">
                     <option value="auto">Detect language</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
                     <option value="af">Afrikaans</option>
@@ -237,7 +237,7 @@
                     <option value="zu">Zulu</option>
                 </select>
                 <label for="tl" class="notranslate" translate="no">To:</label>
-                <select id="tl" class="notranslate" translate="no">
+                <select id="tl" class="notranslate" translate="no" required="required">
                     <option value="id">Indonesian</option>
                     <option value="en">English</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
@@ -369,8 +369,8 @@
     </aside>
     <aside class="text-finder ot dp" id="text-finder">
         <form id="find" action="javascript:;">
-            <input id="f-text" type="text" required="required" placeholder="e.g. flexbox">
-            <button id="r-text" type="reset">&times;</button>
+            <input type="text" required="required" placeholder="e.g. flexbox">
+            <button type="reset">&times;</button>
         </form>
     </aside>
     <script src="/resource/script/translate.js"></script>
