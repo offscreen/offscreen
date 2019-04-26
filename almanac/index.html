@@ -92,6 +92,39 @@
             <header>
                 <h2>Almanac</h2>
             </header>
+            <section class="comments comments:1" id="comments">
+                <header class="comments-header">
+                    <h3>Translate Form</h3>
+                </header>
+                <footer class="comments-footer">
+                    <form class="form-comment" id="form-comment" action="" method="get" target="_blank">
+                        <p class="form-comment-input form-comment-input:author">
+                            <label for="form-comment-input:author">SL</label>
+                            <span>
+                                <input class="block input" id="form-comment-input:author" name="sl" placeholder="en" value="en" required type="text">
+                            </span>
+                        </p>
+                        <p class="form-comment-input form-comment-input:email">
+                            <label for="form-comment-input:email">TL</label>
+                            <span>
+                                <input class="block input" id="form-comment-input:email" name="tl" placeholder="id" value="id" required type="text">
+                            </span>
+                        </p>
+                        <p class="form-comment-input form-comment-input:link">
+                            <label for="form-comment-input:link">URL</label>
+                            <span>
+                                <input class="block input" id="form-comment-input:link" name="u" placeholder="https://" required type="url">
+                            </span>
+                        </p>
+                        <p class="form-comment-button form-comment-button:state">
+                            <label for="form-comment-button:state"></label>
+                            <span>
+                                <button class="button button-submit" id="form-comment-button:state" name="state" type="submit">Translate</button>
+                            </span>
+                        </p>
+                    </form>
+                </footer>
+            </section>
             <!-- path: /author/ -->
             <!--
             <div>
@@ -192,42 +225,6 @@
                     </li>
                 </ul>
             </footer>
-            <!--
-            <section class="comments comments:1" id="comments">
-                <header class="comments-header">
-                    <h3>Translate Form</h3>
-                </header>
-                <footer class="comments-footer">
-                    <form class="form-comment" id="form-comment" action="https://translate.google.com/translate" method="get" target="_blank">
-                        <input name="hl" type="hidden" value="en">
-                        <p class="form-comment-input form-comment-input:author">
-                            <label for="form-comment-input:author">SL</label>
-                            <span>
-                                <input class="block input" id="form-comment-input:author" name="sl" placeholder="en" value="en" required type="text">
-                            </span>
-                        </p>
-                        <p class="form-comment-input form-comment-input:email">
-                            <label for="form-comment-input:email">TL</label>
-                            <span>
-                                <input class="block input" id="form-comment-input:email" name="tl" placeholder="id" value="id" required type="text">
-                            </span>
-                        </p>
-                        <p class="form-comment-input form-comment-input:link">
-                            <label for="form-comment-input:link">URL</label>
-                            <span>
-                                <input class="block input" id="form-comment-input:link" name="u" placeholder="https://" required type="url">
-                            </span>
-                        </p>
-                        <p class="form-comment-button form-comment-button:state">
-                            <label for="form-comment-button:state"></label>
-                            <span>
-                                <button class="button button-submit" id="form-comment-button:state" name="state" type="submit">Translate</button>
-                            </span>
-                        </p>
-                    </form>
-                </footer>
-            </section>
-            -->
         </article>
         <aside>
             <ul>
