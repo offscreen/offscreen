@@ -341,7 +341,7 @@
             <span class="move" id="move">
                 <span class="move-up" id="move-up" title="Move Up">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <title>move-up</title>
+                        <title>Move Up</title>
                         <path d="M22 16v12h2v-12h5l-6-6-6 6z"></path>
                         <path d="M2 6h3v2h-3v-2z"></path>
                         <path d="M6 6h3v2h-3v-2z"></path>
@@ -382,6 +382,16 @@
         })();
     </script>
     <script src="/resource/script/date.js"></script>
+    <script>
+        $(function() {
+            $('#move-up').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 'slow');
+                return false;
+            });
+        });
+    </script>
 </body>
 
 
