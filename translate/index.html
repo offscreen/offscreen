@@ -815,7 +815,8 @@
                         <option value="yo">Yoruba</option>
                         <option value="zu">Zulu</option>
                     </select>
-                    <textarea name='text' rows="4" placeholder="One or two words to translate" required="required"></textarea>
+                    <label for="ta-tt" class="notranslate" translate="no">One or two words to translate:</label>
+                    <textarea id="ta-tt" name='text' rows="4" placeholder="One or two words to translate" required="required"></textarea>
                     <button class="notranslate" translate="no" type="submit">Translate</button>
                 </form>
             </fieldset>
@@ -828,7 +829,8 @@
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Internet Search Form</legend>
                 <form action="https://www.google.com/search" class="notranslate" method="get" target="_blank" translate="no">
-                    <input type="search" name="q" placeholder="One or two words to search" required="required">
+                    <label for="g-q" class="notranslate" translate="no">One or two words to search:</label>
+                    <input id="g-q" type="search" name="q" placeholder="One or two words to search" required="required">
                     <button class="notranslate" translate="no" type="submit">Search</button>
                 </form>
             </fieldset>
@@ -876,16 +878,8 @@
 
     <script src="/resource/script/translate.js"></script>
     <script src="/resource/script/move.js"></script>
+    <script src="/resource/script/open.js"></script>
     <script src="/resource/script/date.js"></script>
-    <script>
-        (function() {
-            var obf = document.getElementById('ob');
-            obf.onclick = function() {
-                window.open('/' + document.getElementById('ab').value + '/' + document.getElementById('tb').value + '/');
-                return true;
-            };
-        })();
-    </script>
 
     <!-- https://jsfiddle.net/samliew/xhYZb/ https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
 </body>
