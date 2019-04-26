@@ -313,7 +313,7 @@
             var b = document.getElementById('o');
             o.onclick = function() {
                 window.open(encodeURIComponent(location.protocol) + '//' + encodeURIComponent(location.hostname) + document.getElementById('a').value + '/' + document.getElementById('b').value + '/');
-                return false;
+                return true;
             };
         })();
     </script>
