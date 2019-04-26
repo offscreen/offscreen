@@ -1,39 +1,67 @@
-var TRange = null;
+/*!
+ highlight v4
+ Highlights arbitrary terms.
+ <http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html>
+ MIT license.
+ Johann Burkard
+ <http://johannburkard.de>
+ <mailto:jb@eaio.com>
+*/
+(function($) {
+    $.fn.highlight = function(pat) {
+        function innerHighlight(node, pat) {
+            var skip = 0;
+            if (node.nodeType == 3) {
+                var pos = node.data.toUpperCase().indexOf(pat);
+                if (pos >= 0) {
+                    var spannode = document.createElement('span');
+                    spannode.className = 'highlight';
+                    var middlebit = node.splitText(pos);
+                    var endbit = middlebit.splitText(pat.length);
+                    var middleclone = middlebit.cloneNode(true);
+                    spannode.appendChild(middleclone);
+                    middlebit.parentNode.replaceChild(spannode, middlebit);
+                    skip = 1;
+                }
+            } else if (node.nodeType == 1 && node.childNodes && !/(script|style)/i.test(node.tagName)) {
+                for (var i = 0; i < node.childNodes.length; ++i) {
+                    i += innerHighlight(node.childNodes[i], pat);
+                }
+            }
+            return skip;
+        }
+        return this.length && pat && pat.length ? this.each(function() {
+            innerHighlight(this, pat.toUpperCase());
+        }) : this;
+    };
+    $.fn.removeHighlight = function() {
+        return this.find("span.highlight").each(function() {
+            this.parentNode.firstChild.nodeName;
+            with(this.parentNode) {
+                replaceChild(this.firstChild, this);
+                normalize();
+            }
+        }).end();
+    };
+})(jQuery);
 
-function findString(str) {
-    if (parseInt(navigator.appVersion) < 4) return;
-    var strFound;
-    if (window.find) {
-        // CODE FOR BROWSERS THAT SUPPORT window.find
-        strFound = self.find(str);
-        if (strFound && self.getSelection && !self.getSelection().anchorNode) {
-            strFound = self.find(str)
-        }
-        if (!strFound) {
-            strFound = self.find(str, 0, 1)
-            while (self.find(str, 0, 1)) continue
-        }
-    } else if (navigator.appName.indexOf("Microsoft") != -1) {
-        // EXPLORER-SPECIFIC CODE        
-        if (TRange != null) {
-            TRange.collapse(false)
-            strFound = TRange.findText(str)
-            if (strFound) TRange.select()
-        }
-        if (TRange == null || strFound == 0) {
-            TRange = self.document.body.createTextRange()
-            strFound = TRange.findText(str)
-            if (strFound) TRange.select()
-        }
-    } else if (navigator.appName == "Opera") {
-        alert("Opera browsers not supported, sorry...")
-        return;
-    }
-    if (!strFound) alert("String '" + str + "' not found!")
-    return;
-};
-
-document.getElementById('f1').onsubmit = function() {
-    findString(this.t1.value);
-    return false;
-};
+// Text finder form function
+(function($) {
+    $(document).ready(function() {
+        var $finder = $('#text-finder'),
+            $field = $finder.children().first(),
+            $clear = $field.next(),
+            $area = $(document.body),
+            $viewport = $('html, body');
+        $field.on("keyup", function() {
+            $area.removeHighlight().highlight(this.value); // Highlight text inside `$area` on keyup
+            $viewport.scrollTop($area.find('span.highlight').first().offset().top - 50); // Jump the viewport to the first highlighted term
+        });
+        $clear.on("click", function() {
+            $area.removeHighlight(); // Remove all highlight inside `$area`
+            $field.val('').trigger("focus"); // Clear the search field
+            $viewport.scrollTop(0); // Jump the viewport to the top
+            return false;
+        });
+    });
+})(jQuery);
