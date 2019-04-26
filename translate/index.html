@@ -126,8 +126,8 @@
     <aside class="notranslate" translate="no">
         <!-- Translate Form -->
         <section class="ot dp">
-            <fieldset>
-                <legend>Webpage Translate Form</legend>
+            <fieldset class="notranslate" translate="no">
+                <legend class="notranslate" translate="no">Webpage Translate Form</legend>
                 <label for="sl" class="notranslate" translate="no">From:</label>
                 <select id="sl" class="notranslate" translate="no" required="required">
                     <option value="auto">Detect language</option>
@@ -351,9 +351,10 @@
         </section>
     </aside>
     <aside class="notranslate" translate="no">
+        <!-- Words Translate -->
         <section class="ot dp">
-            <fieldset>
-                <legend>Words Translate Form</legend>
+            <fieldset class="notranslate" translate="no">
+                <legend class="notranslate" translate="no">Words Translate Form</legend>
                 <form action="https://translate.google.com" class="notranslate" method="get" target="_blank" translate="no">
                     <input name="hl" type="hidden" value="en">
                     <input name="tab" type="hidden" value="TT">
@@ -579,6 +580,17 @@
                     </select>
                     <textarea name='text' rows="4" placeholder="One or two words to translate" required="required"></textarea>
                     <button class="notranslate" translate="no" type="submit">Translate</button>
+                </form>
+            </fieldset>
+        </section>
+    </aside>
+    <aside class="notranslate" translate="no">
+        <section class="ot dp">
+            <fieldset class="notranslate" translate="no">
+                <legend class="notranslate" translate="no">Internet Search</legend>
+                <form action="https://www.google.com/search" class="notranslate" method="get" target="_blank" translate="no">
+                    <input type="search" name="q" placeholder="One or two words to search" required="required">
+                    <button class="notranslate" translate="no" type="submit">Search</button>
                 </form>
             </fieldset>
         </section>
