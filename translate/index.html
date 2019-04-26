@@ -300,8 +300,7 @@
                             <option value="zu">Zulu</option>
                         </select></div>
                 </div>
-                <a id="tg" href="#">Google Translate</a>
-                <a id="tb" href="#">Microsoft Translate</a>
+                <a id="tg" href="#">Translate</a>
             </div>
         </section>
         <!-- Content to Translate -->
@@ -329,15 +328,6 @@
             var a = document.getElementById('tg');
             a.onclick = function() {
                 window.open('https://translate.google.com/translate?hl=en&sl=' + document.getElementById('sl').value + '&tl=' + document.getElementById('tl').value + '&u=' + encodeURIComponent(location.href) + '');
-                return false;
-            };
-        })();
-    </script>
-    <script>
-        (function() {
-            var b = document.getElementById('tb');
-            b.onclick = function() {
-                window.open('https://www.translatetheweb.com/?from=' + document.getElementById('sl').value + '&to=' + document.getElementById('tl').value + '&dl=en&a=' + encodeURIComponent(location.href) + '');
                 return false;
             };
         })();
