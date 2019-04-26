@@ -69,73 +69,41 @@
     <script async src="/resource/script/ga.js"></script>
     <script src="/resource/script/url-form-field.js"></script>
     <style>
-        /* TAHAP PEMBENTUKAN ULANG */
-
         button,
         input,
         select,
         textarea {
             display: inline-block;
-            /* alternatif yang lebih baik dibandingkan `display:inline` */
             vertical-align: middle;
-            /* posisikan elemen ke tengah secara vertikal terhadap teks */
             width: 170px;
-            /* tentukan lebar elemen secara umum */
             margin: 1px 0;
-            /* tentukan `margin` elemen secara umum */
             padding: 4px;
-            /* tentukan `padding` elemen secara umum */
             font: normal normal 13px/normal "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-            /* tentukan tipe fon secara umum */
             color: #333;
-            /* tentukan warna teks secara umum */
             line-height: normal;
-            /* tentukan `line-height` secara umum (deklarasi `line-height` pada selektor `font` di atas biasanya tidak bekerja pada elemen `<button>`) */
             background-color: white;
-            /* tentukan warna latar secara umum */
             border: 1px solid #333;
-            /* tentukan `border` secara umum */
-
-            /* deklarasikan `box-sizing` yang seragam */
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
-
-            /* hapus outline jika mungkin */
             outline: none;
             outline-offset: -2px;
         }
-
-
-        /* TOMBOL */
 
         button,
         input[type="button"],
         input[type="reset"],
         input[type="submit"] {
             width: auto;
-            /* mengembalikan ukuran lebar ke keadaan semula */
             background-color: #333;
-            /* tentukan warna latar yang berbeda untuk elemen-elemen tombol */
             color: white;
-            /* tentukan warna teks yang berbeda untuk elemen-elemen tombol */
-
-            /* buat `padding` kiri dan kanan menjadi lebih lebar untuk membuatnya lebih gemuk */
             padding-right: 8px;
             padding-left: 8px;
-
             font-weight: bold;
-            /* buat teks menjadi tebal */
             cursor: pointer;
-            /* ubah kursor menjadi `pointer` untuk kenyamanan */
             border-color: transparent;
-            /* opsional */
         }
 
-
-        /* PERBAIKI DIMENSI BEBERAPA ELEMEN INI */
-
-        /* hilangkan nilai `width`, `border`, `padding`, `background` yang telah dibuat sebelumnya pada elemen-elemen ini */
         input[type="checkbox"],
         input[type="image"],
         input[type="radio"] {
@@ -146,22 +114,6 @@
             cursor: pointer;
         }
 
-        /*
-Anda mungkin akan membutuhkan ini untuk memastikan agar
-posisi checkbox dan radio bisa berada tepat di tengah secara vertikal.
-Saya mengomentari deklarasi CSS ini dan tidak menjelaskannya
-secara khusus di atas karena Saya pikir ini adalah
-praktek Magic Number yang tidak disarankan. 
-
-input[type="checkbox"],
-input[type="radio"] {
-  position:relative;
-  top:-2px;
-}
-
-*/
-
-        /* set tipe kursor ke `pointer` untuk kenyamanan */
         input[type="color"],
         input[type="file"],
         label,
@@ -171,19 +123,12 @@ input[type="radio"] {
             cursor: pointer;
         }
 
-        /* textarea */
         textarea {
             overflow: auto;
             display: block;
-            /* set sebagai elemen blok */
             width: 100%;
-            /* buat lebarnya menjadi 100% */
             resize: vertical;
-            /* agar `textarea` hanya bisa diubah ukurannya secara vertikal (lainnya: `both`, `horizontal`, `none`) */
         }
-
-
-        /* MENORMALKAN ::-moz-focus-inner PADA TOMBOL-TOMBOL DI FIREFOX */
 
         button::-moz-focus-inner,
         input::-moz-focus-inner {
@@ -193,17 +138,12 @@ input[type="radio"] {
             outline: none;
         }
 
-
-        /* PSEUDO KELAS - :hover, :focus, :active */
-
-        /* focus */
         input:focus,
         select:focus,
         textarea:focus {
             background-color: #ffa
         }
 
-        /* focus */
         button:focus,
         input[type="button"]:focus,
         input[type="reset"]:focus,
@@ -211,7 +151,6 @@ input[type="radio"] {
             background-color: #00f
         }
 
-        /* hover */
         button:hover,
         input[type="button"]:hover,
         input[type="reset"]:hover,
@@ -219,16 +158,12 @@ input[type="radio"] {
             background-color: #444
         }
 
-        /* active */
         button:active,
         input[type="button"]:active,
         input[type="reset"]:active,
         input[type="submit"]:active {
             background-color: #111
         }
-
-
-        /* FIELDSET & LEGEND */
 
         fieldset {
             margin: 0 0 1em;
@@ -242,23 +177,14 @@ input[type="radio"] {
             font-weight: bold;
         }
 
-
-        /* DISABLED */
-
         button[disabled],
         input[disabled],
         select[disabled],
         textarea[disabled] {
             opacity: .7;
-            /* buat warnanya menjadi kabur */
             cursor: default;
-            /* fallback */
             cursor: not-allowed;
-            /* CSS3 */
         }
-
-
-        /* READONLY */
 
         input[type="date"][readonly],
         input[type="email"][readonly],
@@ -278,34 +204,25 @@ input[type="radio"] {
             cursor: default;
         }
 
-
-        /* PLACEHOLDER */
-
         ::-webkit-input-placeholder {
             color: #999
         }
 
-        /* WebKit */
         :-ms-input-placeholder {
             color: #999
         }
 
-        /* IE 9+ */
         ::-moz-placeholder {
             color: #999
         }
 
-        /* Firefox 19+ */
         :-moz-placeholder {
             color: #999
         }
 
-        /* Firefox 18- */
         :placeholder {
             color: #999
         }
-
-        /* W3C */
 
         :focus::-webkit-input-placeholder {
             color: #b9b989
