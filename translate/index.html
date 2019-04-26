@@ -71,6 +71,9 @@
 </head>
 
 <body>
+
+<div id='slider'>Hello World!!</div>
+<button id='trigger'>Trigger</button>
     <article>
         <!-- Header of Content -->
         <header>
@@ -333,6 +336,15 @@
         })();
     </script>
     <script src="/resource/script/date.js"></script>
+    <script src="https://nnattawat.github.io/slideReveal/asset/js/jquery.slidereveal.js"></script>
+    <script>
+$("#slider").slideReveal({
+  trigger: $("#trigger"),
+  autoEscape: false,
+  width: 500,
+  speed: 700
+});
+    </script>
 </body>
 
 </html>
