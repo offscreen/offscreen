@@ -844,29 +844,31 @@
         <section class="ot dp">
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Open File Form</legend>
-                <select id="slash-i" readonly="readonly" required="required">
-                    <option value="">None</option>
-                    <option value="/" selected="selected">/</option>
-                </select>
-                <label for="ab" class="notranslate sr" translate="no">Author:</label>
-                <input type="search" id="ab" class="notranslate" translate="no" placeholder="bela-balazs" maxlength="500" required="required">
-                <select id="slash-ii" required="required">
-                    <option value="">None</option>
-                    <option value="/">/</option>
-                </select>
-                <label for="tb" class="notranslate sr" translate="no">Title:</label>
-                <input type="search" id="tb" class="notranslate" translate="no" placeholder="theory-of-the-film" maxlength="500" required="required">
-                <select id="slash-iii" required="required">
-                    <option value="">None</option>
-                    <option value="/">/</option>
-                </select>
-                <label for="cb" class="notranslate sr" translate="no">Chapter:</label>
-                <input type="search" id="cb" class="notranslate" translate="no" placeholder="i" maxlength="500" required="required">
-                <select id="slash-iv" required="required">
-                    <option value="">None</option>
-                    <option value="/">/</option>
-                </select>
-                <button type="submit" id="ob" class="notranslate" translate="no">Open</button>
+                <form onsubmit="return false">
+                    <select id="slash-i" readonly="readonly" required="required">
+                        <option value="">None</option>
+                        <option value="/" selected="selected">/</option>
+                    </select>
+                    <label for="ab" class="notranslate sr" translate="no">Author:</label>
+                    <input type="search" id="ab" class="notranslate" translate="no" placeholder="bela-balazs" maxlength="500" required="required">
+                    <select id="slash-ii" required="required">
+                        <option value="">None</option>
+                        <option value="/">/</option>
+                    </select>
+                    <label for="tb" class="notranslate sr" translate="no">Title:</label>
+                    <input type="search" id="tb" class="notranslate" translate="no" placeholder="theory-of-the-film" maxlength="500" required="required">
+                    <select id="slash-iii" required="required">
+                        <option value="">None</option>
+                        <option value="/">/</option>
+                    </select>
+                    <label for="cb" class="notranslate sr" translate="no">Chapter:</label>
+                    <input type="search" id="cb" class="notranslate" translate="no" placeholder="i" maxlength="500" required="required">
+                    <select id="slash-iv" required="required">
+                        <option value="">None</option>
+                        <option value="/">/</option>
+                    </select>
+                    <button type="submit" id="ob" class="notranslate" translate="no">Open</button>
+                </form>
             </fieldset>
         </section>
     </aside>
