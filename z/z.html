@@ -66,6 +66,11 @@ parent.findString(this.t1.value);return false;">
     <iframe id="srchform2" src="javascript:'<html><body style=margin:0px; ><form action=\'javascript:void();\' onSubmit=if(this.t1.value!=\'\')parent.findString(this.t1.value);return(false); ><input type=text id=t1 name=t1 value=text size=20><input type=submit name=b1 value=Find></form></body></html>'" width="220" height="34" border="0" frameborder="0" scrolling="no">
     </iframe>
 
+    <form>
+        <input type=button value="window.find()" onclick="if(window.find)window.find();else alert('Your browser does not support \'window.find()\'!')">
+        <input type=button value="window.find('text',0,0,0,0,0,1)" onclick="if(window.find)window.find('text',0,0,0,0,0,1);else alert('Your browser does not support \'window.find()\'!')">
+    </form>
+
     <!-- http://www.javascripter.net/faq/searchin.htm -->
 </body>
 
