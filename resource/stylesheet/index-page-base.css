@@ -232,5 +232,6 @@ pre.code.fullwidth {
 }
 
 .move-up, .move-down {
+  display: inline-block;
   cursor: pointer;
 }
