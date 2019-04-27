@@ -48,7 +48,7 @@
 // Text finder form function
 (function($) {
     $(document).ready(function() {
-        var $finder = $('#find'),
+        var $finder = $('#text-finder'),
             $field = $finder.children().first(),
             $clear = $field.next(),
             $area = $(document.body),
