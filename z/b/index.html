@@ -86,10 +86,10 @@
         <section>
             <form onsubmit="return false">
                 <label for="j-mark" class="notranslate" translate="no">Find on page:</label>
-                <input id="j-mark" class="notranslate findmark" translate="no" type="search" placeholder="e.g. cinema" required="required">
+                <input id="j-mark" data-find="mark" class="notranslate" translate="no" type="search" placeholder="e.g. cinema" required="required">
                 <button class="notranslate" translate="no" type="submit" data-search="next">&darr;</button>
                 <button class="notranslate" translate="no" type="submit" data-search="prev">&uarr;</button>
-                <button class="notranslate" translate="no" type="reset" data-search="clear">&times;</button>
+                <button class="notranslate" translate="no" type="reset" data-search="reset">&times;</button>
             </form>
         </section>
     </aside>
@@ -114,9 +114,9 @@
         $(function() {
 
             // the input field
-            var $input = $("input[type='search']"),
+            var $input = $("input[data-find='mark']"),
                 // clear button
-                $clearBtn = $("button[data-search='clear']"),
+                $clearBtn = $("button[data-search='reset']"),
                 // prev button
                 $prevBtn = $("button[data-search='prev']"),
                 // next button
