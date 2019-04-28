@@ -23,3 +23,10 @@
     /* highlight color */
     font-weight: normal;
 }
+
+mark {
+    background: yellow
+}
+mark.current {
+    background: orange
+}
