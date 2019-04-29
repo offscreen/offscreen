@@ -72,7 +72,7 @@
             //#1 this is the transition, it won't work for old IE
             function addEasing(a) {
 
-                if (flag === 1) { //check flag
+                if (flag === 0) { //check flag
                     a.style.cssText = "transition: height 500ms; -webkit-transition: height 500ms; -moz-transition: height 500ms; -o-transition: height 500ms";
                 } else {
                     a.style.cssText = "transition: none; -webkit-transition: none; -moz-transition: none; -o-transition: none";
