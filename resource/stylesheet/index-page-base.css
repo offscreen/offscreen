@@ -231,7 +231,7 @@ pre.code.fullwidth {
   display: block;
 }
 
-.move-up, .move-down {
+.move-up svg, .move-down svg {
   margin: 0 auto 
 }
 
