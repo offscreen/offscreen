@@ -11,7 +11,7 @@
     <meta content="noindex,nofollow,noarchive,nosnippet,noodp,noimageindex" name="googlebot">
     <meta content="no-cache" http-equiv="cache-control">
     <meta content="nositelinkssearchbox" name="google">
-    <title class="notranslate" translate="no">JavaScript Find on Page</title>
+    <title class="notranslate" translate="no">Markjs</title>
     <meta content="Everything invisible has power in everything visible." name="description">
     <meta content="offscreen,space" name="keywords">
     <meta content="Offscreen Space" name="subject">
@@ -27,7 +27,7 @@
     <link as="script" rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     <link as="script" rel="preload" href="/resource/script/ga.js">
     <link as="script" rel="preload" href="/resource/script/url-form-field.js">
-    <link as="script" rel="preload" href="/resource/script/find-highlight.js">
+    <link as="script" rel="preload" href="/resource/script/find-mark-highlight-jump.js">
     <link as="script" rel="preload" href="/resource/script/translate.js">
     <link as="script" rel="preload" href="/resource/script/move.js">
     <link as="script" rel="preload" href="/resource/script/open.js">
@@ -76,66 +76,26 @@
     <meta content="no" name="wap-font-scale">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async src="/resource/script/ga.js"></script>
-    <script>
-        function FindNext() {
-            var str = document.getElementById("findField").value;
-            if (str == "") {
-                alert("Please enter some text to search!");
-                return;
-            }
-
-            var supported = false;
-            var found = false;
-            if (window.find) { // Firefox, Google Chrome, Safari
-                supported = true;
-                // if some content is selected, the start position of the search 
-                // will be the end position of the selection
-                found = window.find(str);
-            } else {
-                if (document.selection && document.selection.createRange) { // Internet Explorer, Opera before version 10.5
-                    var textRange = document.selection.createRange();
-                    if (textRange.findText) { // Internet Explorer
-                        supported = true;
-                        // if some content is selected, the start position of the search 
-                        // will be the position after the start position of the selection
-                        if (textRange.text.length > 0) {
-                            textRange.collapse(true);
-                            textRange.move("character", 1);
-                        }
-
-                        found = textRange.findText(str);
-                        if (found) {
-                            textRange.select();
-                        }
-                    }
-                }
-            }
-
-            if (supported) {
-                if (!found) {
-                    alert("The following text was not found:\n" + str);
-                }
-            } else {
-                alert("Your browser does not support this example!");
-            }
-        }
-    </script>
 </head>
+<!DOCTYPE html>
+<html>
 
 <body>
 
     <aside class="notranslate find-mark-highlight-jump ot dp" id="text-finder" translate="no">
         <section>
-            <input type="search" id="findField">
-            <button onclick="FindNext ();">Find</button>
+            <form onsubmit="return false">
+                <label for="j-mark" class="notranslate" translate="no">Find on page:</label>
+                <input id="j-mark" data-find="mark" class="notranslate" translate="no" type="search" placeholder="e.g. cinema" required="required">
+                <button class="notranslate" translate="no" type="submit" data-search="next">&darr;</button>
+                <button class="notranslate" translate="no" type="submit" data-search="prev">&uarr;</button>
+                <button class="notranslate" translate="no" type="reset" data-search="reset">&times;</button>
+            </form>
         </section>
     </aside>
 
     <main>
-        <article>
-            <header>
-                <h3>JavaScript Find on Page</h3>
-            </header>
+        <article class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -149,7 +109,14 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
     </main>
-    <!-- http://help.dottoro.com/ljkjvqqo.php -->
+
+    <script src="/resource/script/find-mark-highlight-jump.js"></script>
+    <script src="/resource/script/jquery-find-mark-highlight-jump.js"></script>
+
+    <!-- https://markjs.io/ -->
+    <!-- https://jsfiddle.net/julmot/973gdh8g/ -->
+    <!-- https://www.jquery-az.com/3-demos-of-jqueryjavascript-keyword-highlighting-plug-in-mark-js/ -->
+    <!-- https://www.jquery-az.com/jquery/demo.php?ex=153.0_3 -->
 
 </body>
 
