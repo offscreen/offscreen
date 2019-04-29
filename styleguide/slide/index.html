@@ -1,151 +1,33 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery example: slideUp(), slideDown(), and slideToggle()</title>
+    </head>
+    <body>
+    <button id='slide-down'>Slide Down</button>       
+    <button id='slide-up'>Slide Up</button>        
+    <button id='toggle-sliding'>Toggle Sliding</button>
+    <img src='https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png' alt='hopper'>
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <title></title>
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            background: #eee;
-        }
-
-        .element {
-            height: 400px;
-            background: royalblue;
-            font-size: 24px;
-            word-break: keep-all;
-            color: white;
-            line-height: 24px;
-        }
-
-    </style>
-</head>
-
-<body>
-
-    <article id="element" class="element">
-        <p>This works for every browser, I guess.</p>
-    </article>
-
-    <section style="text-align:center">
-        <button type="button" id="button" class="button">slideUp</button>
-    </section>
-
-    <script type="text/javascript">
-        (function(d) { //closure, close up
-
-            //GLOBAL VARIABLES
-            var button = d.getElementById("button"),
-                ease = d.getElementById("easing"),
-                element = d.getElementById("element"),
-                duration = 15,
-                height, interval, counter, flag = 0;
-
-            //**************************************
-            //FUNCTIONS
-            //#1 this is the transition, it won't work for old IE
-            function addEasing(a) {
-
-                if (flag === 1) { //check flag
-                    a.style.cssText = "transition: height 500ms; -webkit-transition: height 500ms; -moz-transition: height 500ms; -o-transition: height 500ms";
-                } else {
-                    a.style.cssText = "transition: height 500ms; -webkit-transition: height 500ms; -moz-transition: height 500ms; -o-transition: height 500ms";
-                }
-
-            }
-
-            //#2 the slideUp
-            function slideUp(a, b) {
-
-                height = a.offsetHeight; //declare the value of "height" variable
-                counter = height; //declare the value of "counter" variable
-
-                var subtractor = height / 10;
-
-                //add CSS3 transition
-                addEasing(a);
-
-                //disable easing button
-                ease.disabled = 1;
-
-                //to hide the content of the element
-                a.style.overflow = "hidden";
-
-                //decreasing the height
-                interval = setInterval(function() {
-
-                    counter -= subtractor;
-                    if (counter > 0) {
-                        a.style.height = counter + "px";
-                    } else {
-                        a.style.height = 0;
-                        b.disabled = 0;
-                        b.innerHTML = "slideDown";
-                        clearInterval(interval);
-                    }
-                }, duration);
-
-            }
-
-            //#3 the slideDown
-            function slideDown(a, b) {
-
-                var adder = height / 10; //the height is global variable          
-
-                //iteratively increase the height
-                interval = setInterval(function() {
-                    counter += adder;
-                    if (counter < height) {
-                        a.style.height = counter + "px";
-                    } else {
-                        a.style.height = height + "px";
-                        b.disabled = 0;
-                        b.innerHTML = "slideUp";
-                        //enable easing button              
-                        ease.disabled = 0;
-                        clearInterval(interval);
-                    }
-                }, duration);
-
-            }
-
-            //**************************************
-            //BUTTONS TRIGGERS
-            //#1 "slideUp/slideDown" trigger
-            button.onclick = function() {
-
-                var text = this.innerHTML;
-
-                this.disabled = 1;
-                if (text.match(/up/gi)) {
-                    slideUp(element, this);
-                } else {
-                    slideDown(element, this);
-                }
-            };
-
-            //#2 "add/remove CSS3 transition" trigger
-            ease.onclick = function() {
-                var text = this.innerHTML;
-                if (text.match(/add/gi)) {
-                    element.innerHTML = "The CSS3 transition won't work on old IE";
-                    this.innerHTML = "remove CSS3 transition";
-                    flag = 1;
-                } else {
-                    element.innerHTML = "The CSS3 transition won't work on old IE";
-                    this.innerHTML = "remove CSS3 transition";
-                    flag = 0;
-                }
-            };
-
-        }(document));
-        //Awynay, the "easing" can be achieved in the JavaScript without CSS3 transition. E.g.: gradually changing the amount of subtractor/adder and/or the interval duration.
-        //This one is straight forward. Or backward.
-        //jQuery is very neat indeed.
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        
+        // Monitors the buttons for click events and slides <img> in response
+        
+        $('#slide-down').click(function(){
+            $('img').slideDown('fast');
+        });
+        
+        $('#slide-up').click(function(){
+            $('img').slideUp(400);
+        });
+        
+        $('#toggle-sliding').click(function(){
+            $('img').slideToggle('slow');
+        });
     </script>
-</body>
-
+    </body>
 </html>
+<!-- Example created by Bryce:
+https://www.khanacademy.org/profile/BryceMCA/ -->
