@@ -160,7 +160,9 @@
                 <label class="notranslate" translate="no" for="port">Port:</label>
                 <input class="notranslate" translate="no" type="text" id="port">
                 <label class="notranslate" translate="no" for="protocol">Protocol:</label>
-                <input type="text" id="protocol">
+                <input class="notranslate" translate="no" type="text" id="protocol">
+                <label class="notranslate" translate="no" for="search">Search:</label>
+                <input class="notranslate" translate="no" type="text" id="search">
             </fieldset>
         </section>
     </aside>
@@ -969,7 +971,7 @@
                 document.getElementById('pathname').value = window.location.pathname;
                 document.getElementById('port').value = window.location.port;
                 document.getElementById('protocol').value = window.location.protocol;
-                
+                document.getElementById('search').value = window.location.search;
             }
         </script>
 
