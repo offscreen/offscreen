@@ -929,10 +929,12 @@
     <aside>
         <input type="text" id="href">
         <input type="text" id="hostname">
+        <input type="text" id="pathname">
         <script>
             window.onload=function() {
                 document.getElementById('href').value = window.location.href;
                 document.getElementById('hostname').value = window.location.hostname;
+                document.getElementById('pathname').value = window.location.pathname;
             }
         </script>
     </aside>
