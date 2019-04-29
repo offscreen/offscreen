@@ -141,6 +141,23 @@
     </main>
 
     <aside class="notranslate" translate="no">
+        <!-- URL Form -->
+        <section class="ot dp">
+            <fieldset class="notranslate" translate="no">
+                <legend class="notranslate" translate="no">Uniform Resource Locator Form</legend>
+                <label class="notranslate" translate="no" for="href">Href:</label>
+                <input class="notranslate" translate="no" type="text" id="href">
+                <label class="notranslate" translate="no" for="protocol">Protocol:</label>
+                <input type="text" id="protocol">
+                <label class="notranslate" translate="no" for="hostname">Hostname:</label>
+                <input class="notranslate" translate="no" type="text" id="hostname">
+                <label class="notranslate" translate="no" for="pathname">Pathname:</label>
+                <input class="notranslate" translate="no" type="text" id="pathname">
+            </fieldset>
+        </section>
+    </aside>
+
+    <aside class="notranslate" translate="no">
         <!-- Open File Form -->
         <section class="ot dp">
             <fieldset class="notranslate" translate="no">
@@ -926,19 +943,6 @@
         </section>
     </aside>
 
-    <aside>
-        <input type="text" id="href">
-        <input type="text" id="protocolhostname">
-        <input type="text" id="pathname">
-        <script>
-            window.onload=function() {
-                document.getElementById('href').value = window.location.href;
-                document.getElementById('protocolhostname').value = window.location.protocol + '//' + window.location.hostname;
-                document.getElementById('pathname').value = window.location.pathname;
-            }
-        </script>
-    </aside>
-
     <script src="/resource/script/url-form-field.js"></script>
     <script src="/resource/script/find-mark-highlight-jump.js"></script>
     <script src="/resource/script/jquery-find-mark-highlight-jump.js"></script>
@@ -946,6 +950,15 @@
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/open.js"></script>
     <script src="/resource/script/date.js"></script>
+
+        <script>
+            window.onload=function() {
+                document.getElementById('href').value = window.location.href;
+                document.getElementById('protocolhostname').value = window.location.protocol;
+                document.getElementById('protocolhostname').value = window.location.hostname;
+                document.getElementById('pathname').value = window.location.pathname;
+            }
+        </script>
 
     <!-- https://jsfiddle.net/samliew/xhYZb/ -->
     <!-- https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
