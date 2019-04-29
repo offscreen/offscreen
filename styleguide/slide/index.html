@@ -2,32 +2,39 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>jQuery example: slideUp(), slideDown(), and slideToggle()</title>
+        <title>Toggle</title>
     </head>
     <body>
-    <button id='slide-down'>Slide Down</button>       
-    <button id='slide-up'>Slide Up</button>        
-    <button id='toggle-sliding'>Toggle Sliding</button>
-    <img src='https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png' alt='hopper'>
+       
+    <button id='toggle-sliding'>Toggle</button>
+
+    <aside id="aside">
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+    </aside>
+
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+    </main>    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        
-        // Monitors the buttons for click events and slides <img> in response
-        
-        $('#slide-down').click(function(){
-            $('img').slideDown('fast');
-        });
-        
-        $('#slide-up').click(function(){
-            $('img').slideUp(400);
-        });
-        
         $('#toggle-sliding').click(function(){
-            $('img').slideToggle('slow');
+            $('#aside').slideToggle('slow');
         });
     </script>
     </body>
 </html>
-<!-- Example created by Bryce:
-https://www.khanacademy.org/profile/BryceMCA/ -->
