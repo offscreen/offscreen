@@ -1186,7 +1186,7 @@
             return true;
           },
           'done': function done() {},
-          'debug': true,
+          'debug': false,
           'log': window.console
         }, val);
       },
