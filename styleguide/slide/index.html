@@ -53,7 +53,7 @@
                 if (flag === 1) { //check flag
                     a.style.cssText = "transition: height 500ms; -webkit-transition: height 500ms; -moz-transition: height 500ms; -o-transition: height 500ms";
                 } else {
-                    a.style.cssText = "transition: none; -webkit-transition: none; -moz-transition: none; -o-transition: none";
+                    a.style.cssText = "transition: height 500ms; -webkit-transition: height 500ms; -moz-transition: height 500ms; -o-transition: height 500ms";
                 }
 
             }
@@ -136,8 +136,8 @@
                     this.innerHTML = "remove CSS3 transition";
                     flag = 1;
                 } else {
-                    element.innerHTML = "This works for every browser, I guess.";
-                    this.innerHTML = "add CSS3 transition";
+                    element.innerHTML = "The CSS3 transition won't work on old IE";
+                    this.innerHTML = "remove CSS3 transition";
                     flag = 0;
                 }
             };
