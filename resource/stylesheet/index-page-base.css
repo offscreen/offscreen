@@ -231,10 +231,6 @@ pre.code.fullwidth {
   display: block;
 }
 
-.move-up svg, .move-down svg {
-  margin: 0 auto 
-}
-
 .move-up, .move-down, .svg-button {
   display: inline-block;
   cursor: pointer;
