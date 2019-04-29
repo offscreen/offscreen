@@ -932,7 +932,7 @@
         <input type="text" data-value="pathname">
         <script>
             window.onload=function() {
-                document.getElementsByTagName('input[data-value="href"]').value = window.location.href;
+                document.getElementsByTagName('input[data-value="href"]').value = encodeURIComponent(window.location.href);
                 document.getElementsByTagName('input[data-value="protocolhostname"]').value = window.location.protocol + '//' + window.location.hostname;
                 document.getElementsByTagName('input[data-value="pathname"]').value = window.location.pathname;
             }
