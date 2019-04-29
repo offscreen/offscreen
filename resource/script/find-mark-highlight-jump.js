@@ -1177,7 +1177,7 @@
           'exclude': [],
           'iframes': false,
           'iframesTimeout': 5000,
-          'separateWordSearch': false,
+          'separateWordSearch': true,
           'acrossElements': false,
           'ignoreGroups': 0,
           'each': function each() {},
