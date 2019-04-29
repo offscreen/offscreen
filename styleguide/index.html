@@ -969,7 +969,6 @@
             </form>
         </section>
     </aside>
-    <time id="load-time">Calculating page load time...</time>
 
     <script src="/resource/script/url-form-field.js"></script>
     <script src="/resource/script/find-mark-highlight-jump.js"></script>
@@ -978,19 +977,6 @@
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/open.js"></script>
     <script src="/resource/script/date.js"></script>
-
-    <script>
-        var showTime = document.getElementById('load-time'),
-            startTime = (new Date()).getTime(); // Get the time before `window.onload`
-
-        window.onload = function() {
-            // Get the current time in `window.onload`
-            var endTime = (new Date()).getTime();
-            // Now use the `startTime` and `endTime` to calculate the seconds
-            // And show the result inside `#load-time`
-            showTime.innerHTML = "Page load time = " + ((endTime - startTime) / 1000) + " sec(s).";
-        };
-    </script>
 
     <!-- https://jsfiddle.net/samliew/xhYZb/ -->
     <!-- https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
