@@ -121,7 +121,7 @@
             window.onload=function() {
                 document.getElementById('href').value = window.location.href;
                 document.getElementById('protocolhostname').value = window.location.protocol + '//' + window.location.hostname;
-                document.getElementById('pathname').value = window.location.pathname;
+                document.getElementById('pathname').value = window.location.pathname.split('/');
             }
         </script>
     </aside>
