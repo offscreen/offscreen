@@ -231,6 +231,10 @@ pre.code.fullwidth {
   display: block;
 }
 
+.move {
+  margin-top: 1em;
+}
+
 .move-up, .move-down, .svg-button {
   display: inline-block;
   cursor: pointer;
