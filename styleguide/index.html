@@ -927,10 +927,12 @@
     </aside>
 
     <aside>
-        <input type="text" id="pageurl" name="pageurl" value="pageurl">
+        <input type="text" id="href">
+        <input type="text" id="hostname">
         <script>
             window.onload=function() {
-                document.getElementById('pageurl').value = window.location.href;
+                document.getElementById('href').value = window.location.href;
+                document.getElementById('hostname').value = window.location.hostname;
             }
         </script>
     </aside>
