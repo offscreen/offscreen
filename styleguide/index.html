@@ -931,12 +931,14 @@
         <input type="text" id="protocol">
         <input type="text" id="hostname">
         <input type="text" id="pathname">
+        <input type="text" id="port">
         <script>
             window.onload=function() {
                 document.getElementById('href').value = window.location.href;
                 document.getElementById('protocol').value = window.location.protocol;
                 document.getElementById('hostname').value = window.location.hostname;
                 document.getElementById('pathname').value = window.location.pathname;
+                document.getElementById('pathname').value = window.location.port;
             }
         </script>
     </aside>
