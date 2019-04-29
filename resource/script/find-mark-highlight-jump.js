@@ -450,7 +450,7 @@
         'synonyms': {},
         'accuracy': 'partially',
         'caseSensitive': false,
-        'ignoreJoiners': false,
+        'ignoreJoiners': true,
         'ignorePunctuation': [],
         'wildcards': 'disabled'
       }, options);
