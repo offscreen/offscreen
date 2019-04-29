@@ -227,11 +227,11 @@ pre.code.fullwidth {
   user-select: none
 }
 
-.move {
+.move, .w-nav {
   display: block;
 }
 
-.move-up, .move-down {
+.move-up, .move-down, .w-print {
   display: inline-block;
   cursor: pointer;
 }
