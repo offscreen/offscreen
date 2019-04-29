@@ -229,10 +229,10 @@
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Words Translate Form</legend>
                 <form action="https://translate.google.com" class="notranslate" method="get" target="_blank" translate="no">
-                    <input name="hl" type="hidden" value="en">
-                    <input name="tab" type="hidden" value="TT">
-                    <input name="#view" type="hidden" value="home">
-                    <input name="op" type="hidden" value="translate">
+                    <input name="hl" type="hidden" value="en" required="required">
+                    <input name="tab" type="hidden" value="TT" required="required">
+                    <input name="#view" type="hidden" value="home" required="required">
+                    <input name="op" type="hidden" value="translate" required="required">
                     <label for="w-sl" class="notranslate" translate="no">From:</label>
                     <select id="w-sl" name="sl" class="notranslate" translate="no" required="required">
                         <option value="auto">Detect language</option>
@@ -467,7 +467,7 @@
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">URL Translate Form</legend>
                 <form action="https://translate.google.com/translate" method="get" target="_blank">
-                    <input name="hl" type="hidden" value="en">
+                    <input name="hl" type="hidden" value="en" required="required">
                     <label for="url-sl" class="notranslate" translate="no">From:</label>
                     <select id="url-sl" name="sl" class="notranslate" translate="no" required="required">
                         <option value="auto">Detect language</option>
@@ -701,7 +701,7 @@
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Page Translate Form</legend>
                 <form action="https://translate.google.com/translate" method="get" target="_blank">
-                    <input name="hl" type="hidden" value="en">
+                    <input name="hl" type="hidden" value="en" required="required">
                     <label for="sl" class="notranslate" translate="no">From:</label>
                     <select id="sl" name="sl" class="notranslate" translate="no" required="required">
                         <option value="auto">Detect language</option>
@@ -961,25 +961,11 @@
     <script src="/resource/script/url-form-field.js"></script>
     <script src="/resource/script/find-mark-highlight-jump.js"></script>
     <script src="/resource/script/jquery-find-mark-highlight-jump.js"></script>
+    <script src="/resource/script/window-location.js"></script>
     <script src="/resource/script/translate.js"></script>
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/open.js"></script>
     <script src="/resource/script/date.js"></script>
-
-    <script>
-        window.onload = function() {
-            document.getElementById('gturl').value = window.location.href;
-            document.getElementById('hash').value = window.location.hash;
-            document.getElementById('host').value = window.location.host;
-            document.getElementById('hostname').value = window.location.hostname;
-            document.getElementById('href').value = window.location.href;
-            document.getElementById('origin').value = window.location.origin;
-            document.getElementById('pathname').value = window.location.pathname;
-            document.getElementById('port').value = window.location.port;
-            document.getElementById('protocol').value = window.location.protocol;
-            document.getElementById('search').value = window.location.search;
-        }
-    </script>
 
     <!-- https://jsfiddle.net/samliew/xhYZb/ -->
     <!-- https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
