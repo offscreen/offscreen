@@ -231,7 +231,11 @@ pre.code.fullwidth {
   display: block;
 }
 
-.move-up, .move-down, .w-print {
+.move-up, .move-down, .svg-button {
   display: inline-block;
   cursor: pointer;
+}
+
+.svg-button {
+  margin-right: 10px
 }
