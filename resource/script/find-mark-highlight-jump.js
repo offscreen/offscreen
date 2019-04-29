@@ -450,7 +450,7 @@
         'synonyms': {},
         'accuracy': 'partially',
         'caseSensitive': false,
-        'ignoreJoiners': true,
+        'ignoreJoiners': false,
         'ignorePunctuation': [],
         'wildcards': 'disabled'
       }, options);
@@ -1186,7 +1186,7 @@
             return true;
           },
           'done': function done() {},
-          'debug': false,
+          'debug': true,
           'log': window.console
         }, val);
       },
