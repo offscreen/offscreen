@@ -700,8 +700,10 @@
         <section class="ot dp">
             <fieldset class="notranslate" translate="no">
                 <legend class="notranslate" translate="no">Page Translate Form</legend>
+                <form action="https://translate.google.com/translate" method="get" target="_blank">
+                    <input name="hl" type="hidden" value="en">
                 <label for="sl" class="notranslate" translate="no">From:</label>
-                <select id="sl" class="notranslate" translate="no" required="required">
+                <select id="sl" name="sl" class="notranslate" translate="no" required="required">
                     <option value="auto">Detect language</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
                     <option value="af">Afrikaans</option>
@@ -809,7 +811,7 @@
                     <option value="zu">Zulu</option>
                 </select>
                 <label for="tl" class="notranslate" translate="no">To:</label>
-                <select id="tl" class="notranslate" translate="no" required="required">
+                <select id="tl" name="tl" class="notranslate" translate="no" required="required">
                     <option value="id">Indonesian</option>
                     <option value="en">English</option>
                     <option value="separator" disabled="disabled">&#8212;</option>
@@ -918,7 +920,10 @@
                     <option value="yo">Yoruba</option>
                     <option value="zu">Zulu</option>
                 </select>
-                <button class="notranslate" id="gt" translate="no">Translate</button>
+                <label for="gturl" class="notranslate" translate="no">URL:</label>
+                <input id="gturl" type="url" name="u" readonly="readonly" required="required">
+                <button class="notranslate" translate="no" type="submit">Translate</button>
+            </form>
             </fieldset>
         </section>
     </aside>
