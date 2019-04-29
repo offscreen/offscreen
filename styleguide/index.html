@@ -927,14 +927,14 @@
     </aside>
 
     <aside>
-        <input type="text" data-value="href">
-        <input type="text" data-value="protocolhostname">
-        <input type="text" data-value="pathname">
+        <input type="text" id="href">
+        <input type="text" id="protocolhostname">
+        <input type="text" id="pathname">
         <script>
             window.onload=function() {
-                document.getElementsByTagName('input[data-value="href"]').value = encodeURIComponent(window.location.href);
-                document.getElementsByTagName('input[data-value="protocolhostname"]').value = window.location.protocol + '//' + window.location.hostname;
-                document.getElementsByTagName('input[data-value="pathname"]').value = window.location.pathname;
+                document.getElementById('href').value = window.location.href;
+                document.getElementById('protocolhostname').value = window.location.protocol + '//' + window.location.hostname;
+                document.getElementById('pathname').value = window.location.pathname;
             }
         </script>
     </aside>
