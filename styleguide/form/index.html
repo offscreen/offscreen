@@ -113,18 +113,5 @@
     <br>
     <textarea rows="4" placeholder="Your text goes here..."></textarea>
   </fieldset>
-    <aside>
-        <input type="text" id="href">
-        <input type="text" id="protocolhostname">
-        <input type="text" id="pathname">
-        <script>
-            window.onload=function() {
-                document.getElementById('href').value = window.location.href;
-                document.getElementById('protocolhostname').value = window.location.protocol + '//' + window.location.hostname;
-                document.getElementById('pathname').value = window.location.pathname.split('/');
-            }
-        </script>
-    </aside>
-</form>
 </body>
 </html>
