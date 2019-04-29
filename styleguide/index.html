@@ -123,7 +123,7 @@
             <!-- Offscreen Space Footer -->
             <footer class="ot dp">
                 <p><small><a href="/"><em class="notranslate" translate="no">Offscreen Space</em></a></small></p>
-                <p class="notranslate" translate="no"><small>Copyright &copy; <span id='now_d'></span> Bela Balazs</small></p>
+                <p class="notranslate" translate="no"><small>Copyright &copy; <time><span id='now_d'></span> <span id="clock"></span></time> Bela Balazs</small></p>
             </footer>
             <section class="notranslate w-nav ot dp" translate="no">
                 <nav>
@@ -967,17 +967,6 @@
     <script src="/resource/script/move.js"></script>
     <script src="/resource/script/open.js"></script>
     <script src="/resource/script/date.js"></script>
-
-<time id="clock"></time>
-<script>
-(function() {
-    var clock = document.getElementById('clock');
-    setInterval(function() {
-        var time = new Date().toString().split(' ')[4];
-        clock.innerHTML = time;
-    }, 13);
-})();
-</script>
 
     <!-- https://jsfiddle.net/samliew/xhYZb/ -->
     <!-- https://www.electrictoolbox.com/jquery-scroll-bottom/ -->
