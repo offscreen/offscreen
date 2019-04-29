@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript'>
+        $(function() {
+            $('#toggler').click(function() {
+                $(this).toggleClass('active');
+                $('#comments').slideToggle('slow');
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <a class='toggle-cm' href='#' id='toggler'>
+        7 komentar
+    </a>
+    <div class='comments' id='comments'>
+        <h4>
+            7 komentar:
+
+        </h4>
+    </div>
+</body>
+
+</html>
