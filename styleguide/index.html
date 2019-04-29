@@ -926,6 +926,15 @@
         </section>
     </aside>
 
+    <aside>
+        <input type="text" id="pageurl" name="pageurl" value="pageurl">
+        <script>
+            window.onload=function() {
+                document.getElementById('pageurl').value = window.location.href;
+            }
+        </script>
+    </aside>
+
     <script src="/resource/script/url-form-field.js"></script>
     <script src="/resource/script/find-mark-highlight-jump.js"></script>
     <script src="/resource/script/jquery-find-mark-highlight-jump.js"></script>
