@@ -233,6 +233,7 @@ pre.code.fullwidth {
 
 .move {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .move-up, .move-down, .svg-button {
