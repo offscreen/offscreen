@@ -112,6 +112,7 @@ p, ol, dl, ul {
 
 details { 
   display: block;
+  margin-bottom: 1.3em;
   cursor: pointer
 }
 
