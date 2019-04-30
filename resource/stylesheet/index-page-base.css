@@ -110,10 +110,17 @@ p, ol, dl, ul {
   margin-bottom: 1.3em
 }
 
-details, summary { 
+details { 
   display: block;
-  margin-bottom: 1.3em;
+  margin: 1rem
+}
+
+details, details summary {
   cursor: pointer
+}
+
+summary {
+  font-weight: bold;
 }
 
 details summary fieldset { 
