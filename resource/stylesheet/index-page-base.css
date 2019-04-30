@@ -246,9 +246,6 @@ pre.code.fullwidth {
 
 .move, .w-nav {
   display: block;
-}
-
-.move {
   margin-top: 2em;
   margin-bottom: 2em;
 }
