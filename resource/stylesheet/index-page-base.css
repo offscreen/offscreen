@@ -110,6 +110,10 @@ p, ol, dl, ul {
   margin-bottom: 1.3em
 }
 
+details { 
+  display: block
+}
+
 a:link:not([class]), a:visited:not([class]) {
   color: inherit;
 }
