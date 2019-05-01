@@ -64,7 +64,7 @@ h1 {
 
 @media (max-width: 786px) {
     h1 {
-        margin-top: 0
+        margin-top: 2em
     }
 }
 
