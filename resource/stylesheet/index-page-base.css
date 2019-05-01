@@ -1,249 +1,275 @@
 * {
-  margin: 0
+    margin: 0
 }
 
 html {
-  box-sizing: border-box;
-  font-family: "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  background: #fffff8;
-  color: #112;
-  font-size: 15px;
-  -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%;
-  -webkit-tap-highlight-color:transparent;
-  -webkit-tap-highlight-color:transparent;
+    box-sizing: border-box;
+    font-family: "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: #fffff8;
+    color: #112;
+    font-size: 15px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 786px) {
-  html {
-    font-size: 15px
-  }
+    html {
+        font-size: 15px
+    }
 }
 
-*, *:after, *:before, input {
-  font-family: inherit;
-  box-sizing: inherit
+*,
+*:after,
+*:before,
+input {
+    font-family: inherit;
+    box-sizing: inherit
 }
 
 body {
-  line-height: 1.4;
-  width: 48em;
-  margin: 4em auto 10em auto;
-  max-width: 100%;
-  padding-left: 1em;
-  padding-right: 1em
+    line-height: 1.4;
+    width: 48em;
+    margin: 4em auto 10em auto;
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em
 }
 
 @media (max-width: 786px) {
-  body {
-    margin: 4em auto 10em auto;
-  }
+    body {
+        margin: 4em auto 10em auto;
+    }
 }
 
-h1, h2, h3 {
-  font-weight: 400;
-  line-height: 1.2;
-  margin-top: 2em;
-  margin-bottom: 0
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 2em;
+    margin-bottom: 0
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1;
-  margin-top: 2em;
-  margin-bottom: .5em
+    font-size: 3.2em;
+    line-height: 1;
+    margin-top: 2em;
+    margin-bottom: .5em
 }
 
 @media (max-width: 786px) {
-  h1 {
-    margin-top: 0
-  }
+    h1 {
+        margin-top: 0
+    }
 }
 
 h2 {
-  font-style: italic;
-  font-size: 2.3em;
-  margin-top: 1.7em;
+    font-style: italic;
+    font-size: 2.3em;
+    margin-top: 1.7em;
 }
 
 h3 {
-  font-style: normal;
-  font-size: 1.5em;
-  margin-top: 1.7em;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-top: 1.7em;
 }
 
 /* Hyphenation: http://clagnut.com/blog/2395 */
-article p, article li, article table, article dl, article blockquote {
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-before: 4;
-  -webkit-hyphenate-limit-after: 3;
-  -webkit-hyphenate-limit-chars: 7 4 3;
-  -webkit-hyphenate-limit-lines: 2; 
-  -webkit-hyphenate-limit-zone: 8%;
-  -webkit-hyphenate-limit-last: always;
-  
-  -moz-hyphens: auto;
-  -moz-hyphenate-limit-chars: 7 4 3;
-  -moz-hyphenate-limit-lines: 2;  
-  -moz-hyphenate-limit-zone: 8%;
-  -moz-hyphenate-limit-last: always;
-  
-  -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 7 4 3;
-  -ms-hyphenate-limit-lines: 2; 
-  -ms-hyphenate-limit-zone: 8%;
-  -ms-hyphenate-limit-last: always;
-  
-  hyphens: auto;
-  hyphenate-limit-chars: 7 4 3;
-  hyphenate-limit-lines: 2; 
-  hyphenate-limit-zone: 8%;
-  hyphenate-limit-last: always;
+article p,
+article li,
+article table,
+article dl,
+article blockquote {
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 7 4 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-zone: 8%;
+    -webkit-hyphenate-limit-last: always;
+
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 7 4 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-zone: 8%;
+    -moz-hyphenate-limit-last: always;
+
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 7 4 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-zone: 8%;
+    -ms-hyphenate-limit-last: always;
+
+    hyphens: auto;
+    hyphenate-limit-chars: 7 4 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-zone: 8%;
+    hyphenate-limit-last: always;
 }
 
-p, ol, dl, ul {
-  font-size: 1.4em;
-  margin-top: 1.3em;
-  margin-bottom: 1.3em
+p,
+ol,
+dl,
+ul {
+    font-size: 1.4em;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em
 }
 
-details { 
-  display: block;
-  margin: 1rem 0 1rem 0
+details {
+    display: block;
+    margin: 1rem 0 1rem 0
 }
 
 summary {
-  cursor: pointer;
-  font-weight: bold
+    cursor: pointer;
+    font-weight: bold
 }
 
-a:link:not([class]), a:visited:not([class]) {
-  color: inherit;
+nav>svg {
+    cursor: pointer;
+}
+
+a:link:not([class]),
+a:visited:not([class]) {
+    color: inherit;
 }
 
 a:link:not([class]) {
-  text-decoration: none;
-  background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#989892, #989892);
-  background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#989892, #989892);
-  -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
-  background-position: 0% 93%, 100% 93%, 0% 93%;
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#989892, #989892);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#989892, #989892);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  a:link:not([class]) {
-    background-position-y: 87%, 87%, 87%;
-  }
+    a:link:not([class]) {
+        background-position-y: 87%, 87%, 87%;
+    }
 }
 
 a:link:not([class])::selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe;
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
 }
 
 a:link:not([class])::-moz-selection {
-  text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
-  background: #b4d5fe;
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
 }
 
-label[for], select, .pointer {
-  cursor: pointer;
+label[for],
+select,
+.pointer {
+    cursor: pointer;
 }
 
 hr {
-  display: block;
-  height: 1px;
-  width: 73%;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0
+    display: block;
+    height: 1px;
+    width: 73%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
 }
 
 blockquote {
-  font-size: 1.4em;
-  margin-left: 1.5em;
-  margin-right: 0em;
+    font-size: 1.4em;
+    margin-left: 1.5em;
+    margin-right: 0em;
 }
 
 blockquote p {
-  width: 100%;
-  margin-right: 40px
+    width: 100%;
+    margin-right: 40px
 }
 
 blockquote footer {
-  width: 100%;
-  font-size: 1.1rem;
-  text-align: right
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: right
 }
 
 code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.0rem;
-  line-height: 1.42;
-  white-space: pre;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    white-space: pre;
 }
 
-h1 > code,
-h2 > code,
-h3 > code {
-  font-size: 0.80em;
+h1>code,
+h2>code,
+h3>code {
+    font-size: 0.80em;
 }
 
-.marginnote > code,
-.sidenote > code {
-  font-size: 1rem;
+.marginnote>code,
+.sidenote>code {
+    font-size: 1rem;
 }
 
 pre.code {
-  font-size: 0.9rem;
-  width: 52.5%;
-  margin-left: 2.5%;
-  overflow-x: auto;
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
 }
 
 pre.code.fullwidth {
-  width: 90%;
+    width: 90%;
 }
 
 .sr {
-  position: absolute!important;
-  clip: rect(0 0 0 0);
-  clip: rect(0,0,0,0);
-  width: 1px;
-  height: 1px;
-  margin: -1px 0 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden
+    position: absolute !important;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden
 }
+
 .ot {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
 }
 
-.move, .w-nav {
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.move,
+.w-nav {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.move-up, .move-down, .svg-button {
-  display: inline-block;
-  cursor: pointer;
+.move-up,
+.move-down,
+.svg-button {
+    display: inline-block;
+    cursor: pointer;
 }
