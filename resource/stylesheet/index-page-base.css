@@ -116,8 +116,8 @@ details {
 }
 
 summary {
-  cursor: pointer
-  font-weight: bold;
+  cursor: pointer;
+  font-weight: bold
 }
 
 a:link:not([class]), a:visited:not([class]) {
