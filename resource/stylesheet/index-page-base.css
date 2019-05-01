@@ -115,16 +115,12 @@ details {
   margin: 1rem 0 1rem 0
 }
 
-details, details summary {
+details>summary {
   cursor: pointer
 }
 
 summary {
   font-weight: bold;
-}
-
-details>summary { 
-  cursor: default
 }
 
 a:link:not([class]), a:visited:not([class]) {
