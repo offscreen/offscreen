@@ -134,6 +134,7 @@ summary {
 
 nav>svg {
     cursor: pointer;
+    display: inline-block
 }
 
 a:link:not([class]),
