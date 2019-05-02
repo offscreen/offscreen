@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Escape characters</title>
+    <link href="css/converter.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Escape characters</h1>
+    </header>
+    <main>
+        <div>
+            <fieldset>
+                <legend>Syntax characters</legend>
+                <fieldset>
+                    <legend>Characters to entity name</legend>
+                    <label><input type='checkbox'> <code>&lt;</code> to <code>&amp;lt;</code></label>
+                    <label><input type='checkbox'> <code>&gt;</code> to <code>&amp;gt;</code></label>
+                    <label><input type='checkbox'> <code>&quot;</code> to <code>&amp;quot;</code></label>
+                    <label><input type='checkbox'> <code>&#39;</code> to <code>&amp;apos;</code></label>
+                    <label><input type='checkbox'> <code>&amp;</code> to <code>&amp;amp;</code></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Entity name to characters</legend>
+                    <label><input type='checkbox'> <code>&amp;lt;</code> to <code>&lt;</code></label>
+                    <label><input type='checkbox'> <code>&amp;gt;</code> to <code>&gt;</code></label>
+                    <label><input type='checkbox'> <code>&amp;quot;</code> to <code>&quot;</code></label>
+                    <label><input type='checkbox'> <code>&amp;apos;</code> to <code>&#39;</code></label>
+                    <label><input type='checkbox'> <code>&amp;amp;</code> to <code>&amp;</code></label>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Textarea</legend>
+                <textarea spellcheck="false" placeholder="Copy and paste texts here and then click &lsquo;Ecsape&rsquo;"></textarea>
+                <br>
+                <br>
+                <button>Escape</button>
+                <button>Reset</button>
+                <button>Copy</button>
+            </fieldset>
+        </div>
+    </main>
+    <p>&copy; 2019 <a href="/">Lvyl</a></p>
+    <!--
+    <script src="js/escape.js"></script> -->
+    <script>
+        ! function(t, e) {
+            var n = "getElementsByTagName",
+                a = "replace",
+                i = e[n]("button"),
+                o = e[n]("input"),
+                s = e[n]("textarea");
+            i[0].onclick = function() {
+                if (0 === s[0].value.length) return alert("Don't daydream, let alone sleep!"), !1;
+                1 === s[0].value.length && alert("Only one character?");
+                var t = s[0].value;
+                return t = o[0].checked ? t[a](/</g, "&lt;") : t, t = o[1].checked ? t[a](/>/g, "&gt;") : t, t = o[2].checked ? t[a](/"/g, "&quot;") : t, t = o[3].checked ? t[a](/'/g, "&apos;") : t, t = o[4].checked ? t[a](/&/g, "&amp;") : t, t = o[5].checked ? t[a](/&lt;/g, "<") : t, t = o[6].checked ? t[a](/&gt;/g, ">") : t, t = o[7].checked ? t[a](/&quot;/g, '"') : t, t = o[8].checked ? t[a](/&apos;/g, "'") : t, t = o[9].checked ? t[a](/&amp;/g, "&") : t, s[0].value = t, s[0].focus(), s[0].select(), this.disabled = !0, !1, !2
+            }, i[1].onclick = function() {
+                if (confirm("Have you copied? Do you want to reset it?")) {
+                    return s[0].value = "", s[0].focus(), i[0].disabled = !1, !1, !2
+                } else {
+                    return s[0].value, s[0].focus(), s[0].select(), i[0].disabled = !1, !1, !2
+                }
+            }, i[2].onclick = function() {
+                return s[0].value, s[0].focus(), s[0].select(), document.execCommand("copy")
+            }, s[0].onpaste = function() {
+                i[0].disabled = !1, !2
+            }, s[0].onkeydown = function() {
+                i[0].disabled = !1, !2
+            }
+        }(window, document);
+    </script>
+</body>
+
+</html>
