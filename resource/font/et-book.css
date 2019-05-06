@@ -47,3 +47,15 @@
        url("/resource/font/et-bembo/roman-old-style-figures.ttf") format("truetype"),
        url("/resource/font/et-bembo/roman-old-style-figures.svg#roman-old-style-figures") format("svg");
 }
+
+@font-face {
+  font-family: "Bembo";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot");
+  src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.svg#semi-bold-old-style-figures") format("svg");
+}
