@@ -1,5 +1,29 @@
+@charset "UTF-8";
+
 * {
     margin: 0
+}
+
+* {
+    -moz-font-feature-settings: "kern"1;
+    -ms-font-feature-settings: "kern"1;
+    -o-font-feature-settings: "kern"1;
+    -webkit-font-feature-settings: "kern"1;
+    font-feature-settings: "kern"1;
+    font-kerning: normal;
+    font-feature-settings: "onum"1, "pnum"1, "kern"1, "ss01"1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    letter-spacing: 0.015em;
+    word-spacing: 0.001em;
+    white-space: normal;
+}
+
+@supports (letter-spacing: 0.015cap) {
+    * {
+        letter-spacing: 0.015cap;
+    }
 }
 
 html {
