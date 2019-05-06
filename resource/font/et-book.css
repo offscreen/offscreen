@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "ETBembo";
+  font-family: "Bembo";
   font-weight: normal;
   font-style: normal;
   src: url("/resource/font/et-bembo/roman-line-figures.eot");
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "ETBembo";
+  font-family: "Bembo";
   font-weight: normal;
   font-style: italic;
   src: url("/resource/font/et-bembo/display-italic-old-style-figures.eot");
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: "ETBembo";
+  font-family: "Bembo";
   font-weight: bold;
   font-style: normal;
   src: url("/resource/font/et-bembo/bold-line-figures.eot");
@@ -37,7 +37,7 @@
 }
 
 @font-face {
-  font-family: "ETBembo";
+  font-family: "Bembo";
   font-weight: normal;
   font-style: normal;
   src: url("/resource/font/et-bembo/roman-old-style-figures.eot");
