@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ET Bembo";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/resource/font/et-bembo/roman-line-figures.eot");
+  src: url("/resource/font/et-bembo/roman-line-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/roman-line-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/roman-line-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/roman-line-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/roman-line-figures.svg#roman-line-figures") format("svg");
+}
+
+@font-face {
+  font-family: "ET Bembo";
+  font-weight: normal;
+  font-style: italic;
+  src: url("/resource/font/et-bembo/display-italic-old-style-figures.eot");
+  src: url("/resource/font/et-bembo/display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/display-italic-old-style-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/display-italic-old-style-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/display-italic-old-style-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/display-italic-old-style-figures.svg#display-italic-old-style-figures") format("svg");
+}
+
+@font-face {
+  font-family: "ET Bembo";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/resource/font/et-bembo/bold-line-figures.eot");
+  src: url("/resource/font/et-bembo/bold-line-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/bold-line-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/bold-line-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/bold-line-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/bold-line-figures.svg#bold-line-figures") format("svg");
+}
+
+@font-face {
+  font-family: "ET Bembo OSF";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/resource/font/et-bembo/roman-old-style-figures.eot");
+  src: url("/resource/font/et-bembo/roman-old-style-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/roman-old-style-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/roman-old-style-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/roman-old-style-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/roman-old-style-figures.svg#roman-old-style-figures") format("svg");
+}
+
+@font-face {
+  font-family: "ET Bembo SM OSF";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot");
+  src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot?#iefix") format("embedded-opentype"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.woff2") format("woff2"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.woff") format("woff"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.ttf") format("truetype"),
+       url("/resource/font/et-bembo/semi-bold-old-style-figures.svg#semi-bold-old-style-figures") format("svg");
+}
