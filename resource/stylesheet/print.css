@@ -1,3 +1,28 @@
+body {
+    background: #fffff8;
+    color: #112;
+    font-size: 16pt;
+    margin: 0 5%;
+}
+
 .dp {
     display: none
+}
+
+.sr-print {
+    position: absolute !important;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden
+}
+
+a, a * {
+    color:#930;
+    text-decoration: none;
+    font-weight: bold;
 }

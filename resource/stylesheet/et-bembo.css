@@ -4,6 +4,7 @@
   font-family: "ET Bembo";
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
   src: url("/resource/font/et-bembo/roman-line-figures.eot");
   src: url("/resource/font/et-bembo/roman-line-figures.eot?#iefix") format("embedded-opentype"),
        url("/resource/font/et-bembo/roman-line-figures.woff2") format("woff2"),
@@ -16,6 +17,7 @@
   font-family: "ET Bembo";
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
   src: url("/resource/font/et-bembo/display-italic-old-style-figures.eot");
   src: url("/resource/font/et-bembo/display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"),
        url("/resource/font/et-bembo/display-italic-old-style-figures.woff2") format("woff2"),
@@ -28,6 +30,7 @@
   font-family: "ET Bembo";
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
   src: url("/resource/font/et-bembo/bold-line-figures.eot");
   src: url("/resource/font/et-bembo/bold-line-figures.eot?#iefix") format("embedded-opentype"),
        url("/resource/font/et-bembo/bold-line-figures.woff2") format("woff2"),
@@ -40,6 +43,7 @@
   font-family: "ET Bembo OSF";
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
   src: url("/resource/font/et-bembo/roman-old-style-figures.eot");
   src: url("/resource/font/et-bembo/roman-old-style-figures.eot?#iefix") format("embedded-opentype"),
        url("/resource/font/et-bembo/roman-old-style-figures.woff2") format("woff2"),
@@ -52,6 +56,7 @@
   font-family: "ET Bembo SM OSF";
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
   src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot");
   src: url("/resource/font/et-bembo/semi-bold-old-style-figures.eot?#iefix") format("embedded-opentype"),
        url("/resource/font/et-bembo/semi-bold-old-style-figures.woff2") format("woff2"),
