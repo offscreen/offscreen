@@ -1,5 +1,6 @@
-/* define a page */
+@charset "UTF-8";
 
+/* define a page */
 @page {
   size: A4; 
   margin: 1.1811in;
