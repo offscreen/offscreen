@@ -55,7 +55,7 @@ Bottom right book title, bottom left current page */
    @bottom-right {
        margin: 10pt 0 30pt 0;
        border-top: .25pt solid #666;
-         content: "Our Cats";
+       content: "Our Cats";
        font-size: 9pt;
        color: #333;
    }
@@ -71,6 +71,10 @@ body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background: #ffffff !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
