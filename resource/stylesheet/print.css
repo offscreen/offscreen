@@ -80,3 +80,7 @@ a:after, a:link:after, a:visited:after {
 article a[href^="#"]:after {
    content: "";
 }
+
+.footnote {
+  float: footnote;
+}
