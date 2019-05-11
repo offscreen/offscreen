@@ -1,3 +1,9 @@
+body {
+    background: #fffff8;
+    color: #112;
+    font-size: 12pt;
+}
+
 @page {
   size: size: A4;
 }
@@ -9,27 +15,30 @@
   margin-left: 3cm;
 }
 
-@page:right{
+@page :right {
   @bottom-right {
     content: counter(page);
   }
 }
 
-@page:left{
+@page :left {
   @bottom-left {
     content: "Page " counter(page) " of " counter(pages);
   }
 }
 
 @page :blank {
-  @top-center { content: "This page is intentionally left blank." }
+  @top-center {
+    content: "This page is intentionally left blank."
+    }
 }
 
-body {
-    background: #fffff8;
-    color: #112;
-    font-size: 12pt;
+@page :first {
+    background: #112;
+    color: #fffff8;
 }
+
+
 
 body aside,.dp {
     display: none
