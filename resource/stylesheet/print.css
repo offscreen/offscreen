@@ -2,13 +2,13 @@
 
 /* define a page */
 @page {
-  size: A4; 
+  size: A4;
   margin: 1.1811in;
 }
 
 @page:first {
   size: A4; 
-  margin: 1.1811in;
+  margin: 1.9685in;
 }
 
 /* first page */
