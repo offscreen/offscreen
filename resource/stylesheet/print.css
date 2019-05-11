@@ -1,3 +1,5 @@
+/* define a page */
+
 @page {
   size: A4; 
   margin: 1.1811in;
@@ -20,6 +22,51 @@
     margin: 0;
   }
 }
+
+/* styles for the right hand spread
+Bottom left we display the title of the book, bottom right the page using a CSS counter, top right the content of the current chapter */
+@page:right{ 
+   @bottom-left {
+       margin: 10pt 0 30pt 0;
+       border-top: .25pt solid #666;
+       content: "Our Cats";
+       font-size: 9pt;
+       color: #333;
+   }
+   @bottom-right { 
+       margin: 10pt 0 30pt 0;
+       border-top: .25pt solid #666;
+       content: counter(page);
+       font-size: 9pt;
+   }
+   @top-right {
+       content:  string(doctitle);
+       margin: 30pt 0 10pt 0;
+       font-size: 9pt;
+       color: #333;
+   }
+}
+
+/* styles for the left hand spread 
+Bottom right book title, bottom left current page */
+@page:left {
+
+   @bottom-right {
+       margin: 10pt 0 30pt 0;
+       border-top: .25pt solid #666;
+         content: "Our Cats";
+       font-size: 9pt;
+       color: #333;
+   }
+   @bottom-left { 
+       margin: 10pt 0 30pt 0;
+       border-top: .25pt solid #666;
+       content: counter(page);
+       font-size: 9pt;
+   }
+}
+
+
 body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
