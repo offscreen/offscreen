@@ -85,6 +85,7 @@ body {
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
+    text-align: justify;
     user-select: none
 }
 
@@ -94,6 +95,10 @@ body aside, article footer, .dp {
 
 article {
    page-break-before: always;
+}
+
+article section p {
+    text-indent: 24px;
 }
 
 /* get the title of the current chapter - this will be the content of the h1 
