@@ -78,6 +78,7 @@ body {
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
+    user-select: none
 }
 
 body aside, article footer, .dp {
