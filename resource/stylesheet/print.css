@@ -72,6 +72,7 @@ body {
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background: #fffff8;
     color: #112;
+    line-height: 1.5;
     font-size: 12pt;
 }
 
@@ -83,9 +84,29 @@ article {
    page-break-before: always;
 }
 
+/* get the title of the current chapter - this will be the content of the h1 
+reset figure counter as figures start from 1 in each chapter */
+
 h1 {
+  string-set: doctitle content();
   page-break-before: always;
+  counter-reset: figurenum;
+  counter-reset: footnote;
+  line-height: 1.3;
 }
+
+/* increment chapter counter */
+h1.chapter:before {
+    counter-increment: chapternum;
+    content: counter(chapternum) ". ";
+}
+
+/* increment and display figure counter */
+figcaption:before {
+    counter-increment: figurenum;
+    content: counter(chapternum) "-" counter(figurenum) ". ";
+}
+
 
 h1, h2, h3, h4, h5, h6 {
    page-break-after: avoid;
@@ -123,8 +144,31 @@ article a[href^="#"]:after {
    content: "";
 }
 
-.footnote {
+/* footnotes */
+.fn {
   float: footnote;
+}
+
+.fn {
+  counter-increment: footnote;
+}
+
+.fn::footnote-call {
+  content: counter(footnote);
+  font-size: 9pt;
+  vertical-align: super;
+  line-height: none;
+}
+
+.fn::footnote-marker {
+  font-weight: bold;
+}
+
+@page {
+  @footnotes {
+    border-top: 0.6pt solid black;
+    padding-top: 8pt;
+  }
 }
 
 .sr-print {
@@ -139,4 +183,8 @@ article a[href^="#"]:after {
     overflow: hidden
 }
 
+/* add page number to cross references */
+a.xref:after {
+  content: " (page " target-counter(attr(href, url), page) ")";
+}
 /* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ */
