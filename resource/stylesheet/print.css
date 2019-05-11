@@ -3,12 +3,12 @@
 /* define a page */
 @page {
   size: 6.0in 9.0in;
-  margin: 0.787402in;
+  margin: 0.393701in;
 }
 
 @page:first {
   size: 6.0in 9.0in;
-  margin: 0.787402in;
+  margin: 0.393701in;
 }
 
 /* first page */
