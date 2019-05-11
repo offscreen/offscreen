@@ -1,45 +1,49 @@
 @charset "UTF-8";
 
 /* define a page */
-@page {
-  size: A4 portrait;
-  margin: 1.1811in;
 
-  @bottom-right {
-    content: counter(page);
-    vertical-align: top;
-    padding-top: 3mm;
+
+@page {
+    size: A4 portrait;
+    margin: 1in 0.5in 0.5in;
+    orphans: 4;
+    widows: 3;
+
+    @bottom-right {
+        content: counter(page);
+        vertical-align: top;
+        padding-top: 3mm;
     }
 }
 
-@page:first {
-  size: A4 portrait;
-  margin: 1.1811in;
+@page: first {
+    size: A4 portrait;
+    margin: 1in 0.5in 0.5in;
 }
 
 /* first page */
-@page:first {
-  @bottom-right {
-    content: normal;
-    margin: 0;
-  }
+@page: first {
+    @bottom-right {
+        content: normal;
+        margin: 0;
+    }
 
-  @bottom-left {
-    content: normal;
-    margin: 0;
-  }
+    @bottom-left {
+        content: normal;
+        margin: 0;
+    }
 }
 
-*{
-    width: auto; 
-    border: 0;  
-    padding: 0; 
+* {
+    width: auto;
+    border: 0;
+    padding: 0;
     float: none !important;
     background: transparent !important;
-    color:#000 !important;
-    text-shadow:none !important;
-    filter:none !important;
-    -ms-filter:none !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
 }
 
 body {
@@ -47,21 +51,23 @@ body {
     counter-increment: page 2;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background: transparent !important;
-    width:100% !important;
-    margin:0 !important;
-    padding:0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
     hyphens: auto;
 }
 
-body aside, article footer, .dp {
+body aside,
+article footer,
+.dp {
     display: none !important;
 }
 
 article {
-   page-break-before: always;
+    page-break-before: always;
 }
 
 article header hgroup h1 {
@@ -77,11 +83,11 @@ article section p {
 reset figure counter as figures start from 1 in each chapter */
 
 h1 {
-  string-set: doctitle content();
-  page-break-before: always;
-  counter-reset: figurenum;
-  counter-reset: footnote;
-  line-height: 1.3;
+    string-set: doctitle content();
+    page-break-before: always;
+    counter-reset: figurenum;
+    counter-reset: footnote;
+    line-height: 1.3;
 }
 
 /* increment chapter counter */
@@ -93,75 +99,89 @@ h1.chapter:before {
 /* increment and display figure counter */
 figcaption:before {
     counter-increment: figurenum;
-    content: counter(chapternum) "-" counter(figurenum) ". ";
+    content: counter(chapternum) "-"counter(figurenum) ". ";
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-   page-break-after: avoid;
-   page-break-inside: avoid;
-   font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    font-weight: bold;
 }
 
-h1+p, h2+p, h3+p {
+h1+p,
+h2+p,
+h3+p {
     page-break-before: avoid;
 }
 
-ul, img {
-   page-break-inside: avoid;
+ul,
+img {
+    page-break-inside: avoid;
 }
 
-table, figure {
-  page-break-inside: avoid;
+table,
+figure {
+    page-break-inside: avoid;
 }
 
-ul, ol, dl  {
-    page-break-before:avoid
+ul,
+ol,
+dl {
+    page-break-before: avoid
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
-a, a * {
-    color:#930;
+a,
+a * {
+    color: #930;
     text-decoration: none;
     font-weight: bolder;
 }
 
-a:after, a:link:after, a:visited:after {
-    content: " [" attr(href) "] ";
+a:after,
+a:link:after,
+a:visited:after {
+    content: " ["attr(href) "] ";
 }
 
 article a[href^="#"]:after {
-   content: "";
+    content: "";
 }
 
 /* footnotes */
 .fn {
-  float: footnote;
+    float: footnote;
 }
 
 .fn {
-  counter-increment: footnote;
+    counter-increment: footnote;
 }
 
 .fn::footnote-call {
-  content: counter(footnote);
-  font-size: 9pt;
-  vertical-align: super;
-  line-height: none;
+    content: counter(footnote);
+    font-size: 9pt;
+    vertical-align: super;
+    line-height: none;
 }
 
 .fn::footnote-marker {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 @page {
-  @footnotes {
-    border-top: 0.6pt solid black;
-    padding-top: 8pt;
-  }
+    @footnotes {
+        border-top: 0.6pt solid black;
+        padding-top: 8pt;
+    }
 }
 
 .sr-print {
@@ -178,19 +198,22 @@ article a[href^="#"]:after {
 
 /* add page number to cross references */
 a.xref:after {
-  content: " (page " target-counter(attr(href, url), page) ")";
+    content: " (page "target-counter(attr(href, url), page) ")";
 }
 
-ul, ol {
-    list-style: square; margin-left: 18pt;
-    margin-bottom: 20pt;    
+ul,
+ol {
+    list-style: square;
+    margin-left: 18pt;
+    margin-bottom: 20pt;
 }
 
 li {
     line-height: 1.6em;
-}  
+}
 
-code, pre {
+code,
+pre {
     font-family: "Courier New", Courier, mono
 }
 
@@ -204,4 +227,5 @@ main:after {
 script {
     display: none !important;
 }
+
 /* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ */
