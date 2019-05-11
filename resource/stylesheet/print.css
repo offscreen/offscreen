@@ -86,14 +86,6 @@ article section p {
     /* text-indent: 12.5mm; */
 }
 
-p,
-li,
-pre,
-blockquote,
-figure {
-    page-break-inside: avoid;
-}
-
 /* get the title of the current chapter - this will be the content of the h1 
 reset figure counter as figures start from 1 in each chapter */
 
@@ -127,6 +119,14 @@ h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
     font-weight: bold;
+}
+
+p,
+li,
+pre,
+blockquote,
+figure {
+    page-break-inside: avoid;
 }
 
 h1+p,
@@ -197,18 +197,6 @@ article a[href^="#"]:after {
         border-top: 0.6pt solid black;
         padding-top: 8pt;
     }
-}
-
-.sr-print {
-    position: absolute !important;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px 0 0;
-    padding: 0;
-    border: 0;
-    overflow: hidden
 }
 
 /* add page number to cross references */
