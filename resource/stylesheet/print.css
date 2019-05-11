@@ -2,12 +2,12 @@
 
 /* define a page */
 @page {
-  size: ISO B5;
+  size: 6.0in 9.0in;
   margin: 0.11811in;
 }
 
 @page:first {
-  size: ISO B5;
+  size: 6.0in 9.0in;
   margin: 0.11811in;
 }
 
