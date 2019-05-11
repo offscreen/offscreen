@@ -84,8 +84,6 @@ body {
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
-    text-align: justify;
-    user-select: none
 }
 
 body aside, article footer, .dp {
@@ -97,6 +95,7 @@ article {
 }
 
 article section p {
+    text-align: justify;
     text-indent: 24px;
 }
 
