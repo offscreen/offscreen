@@ -5,7 +5,7 @@ body {
     margin: 0 5%;
 }
 
-.dp {
+body aside,.dp {
     display: none
 }
 
@@ -25,4 +25,8 @@ a, a * {
     color:#930;
     text-decoration: none;
     font-weight: bold;
+}
+
+a:after, a:link:after, a:visited:after {
+    content: " [" attr(href) "] ";
 }
