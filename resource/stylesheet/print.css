@@ -8,24 +8,6 @@
   margin: 1.1811in;
 }
 
-@page :right {
-  @bottom-right {
-    content: counter(page);
-  }
-}
-
-@page :left {
-  @bottom-left {
-    content: "Page " counter(page) " of " counter(pages);
-  }
-}
-
-@page :blank {
-  @top-center {
-    content: "This page is intentionally left blank."
-    }
-}
-
 body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -60,30 +42,12 @@ ul, img {
    page-break-inside: avoid;
 }
 
-ul.toc {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 table, figure {
   page-break-inside: avoid;
 }
 
 img {
   max-width: 100%;
-}
-
-.sr-print {
-    position: absolute !important;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px 0 0;
-    padding: 0;
-    border: 0;
-    overflow: hidden
 }
 
 a, a * {
@@ -102,6 +66,18 @@ article a[href^="#"]:after {
 
 .footnote {
   float: footnote;
+}
+
+.sr-print {
+    position: absolute !important;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden
 }
 
 /* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ */
