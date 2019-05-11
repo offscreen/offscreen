@@ -71,13 +71,13 @@ Bottom right book title, bottom left current page */
 body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background: #fffff8;
+    background: #fffff8 !important;
     color: #112;
     line-height: 1.5;
     font-size: 12pt;
 }
 
-body aside, .dp {
+body aside, article footer, .dp {
     display: none !important;
 }
 
@@ -127,8 +127,17 @@ table, figure {
   page-break-inside: avoid;
 }
 
+ul, ol, dl  {
+    page-break-before:avoid
+}
+
 img {
   max-width: 100%;
+}
+
+/* Wichtige Elemente definieren */    
+p, address, li, dt, dd, blockquote {
+    font-size: 100%
 }
 
 a, a * {
@@ -187,5 +196,25 @@ article a[href^="#"]:after {
 /* add page number to cross references */
 a.xref:after {
   content: " (page " target-counter(attr(href, url), page) ")";
+}
+
+ul, ol {
+    list-style: square; margin-left: 18pt;
+    margin-bottom: 20pt;    
+}
+
+li {
+    line-height: 1.6em;
+}  
+
+code, pre {
+    font-family: "Courier New", Courier, mono
+}
+
+main:after {
+    content: "\ All Rights Reserved";
+    color: #999 !important;
+    font-size: 1em;
+    padding-top: 30px;
 }
 /* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ */
