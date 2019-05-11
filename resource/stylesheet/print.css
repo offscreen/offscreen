@@ -1,12 +1,14 @@
-body {
-    background: #fffff8;
-    color: #112;
-    font-size: 12pt;
+@page {
+   size: 5.5in 8.5in;  
+   margin: 70pt 60pt 70pt;
 }
 
-@page {
-  size: size: A4;
+@page:first {
+   size: 5.5in 8.5in;  
+   margin: 0;
 }
+
+
 @page :left {
   margin-left: 3cm;
 }
@@ -33,14 +35,11 @@ body {
     }
 }
 
-@page :first {
-    body {
-    background: #112;
-    color: #fffff8;
-    }
+body {
+    background: #fffff8;
+    color: #112;
+    font-size: 12pt;
 }
-
-
 
 body aside,.dp {
     display: none
