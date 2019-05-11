@@ -65,6 +65,10 @@ body {
     line-height: 1.5;
     font-size: 12pt;
     hyphens: auto;
+    hyphenate-limit-chars: 7 4 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-zone: 8%;
+    hyphenate-limit-last: always;
 }
 
 body aside,
@@ -78,6 +82,7 @@ article {
 }
 
 article header hgroup h1 {
+    margin-top: 0;
     text-transform: uppercase;
 }
 
