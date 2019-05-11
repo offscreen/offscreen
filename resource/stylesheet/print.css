@@ -67,6 +67,13 @@ Bottom right book title, bottom left current page */
    }
 }
 
+*{
+    width: auto; 
+    border: 0;  
+    padding: 0; 
+    float: none !important;
+}
+
 body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
