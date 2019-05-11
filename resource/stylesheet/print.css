@@ -64,6 +64,10 @@ article {
    page-break-before: always;
 }
 
+article header hgroup h1 {
+    text-transform: uppercase;
+}
+
 article section p {
     text-align: justify;
     text-indent: 12.5mm;
