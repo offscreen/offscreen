@@ -135,11 +135,6 @@ img {
   max-width: 100%;
 }
 
-/* Wichtige Elemente definieren */    
-p, address, li, dt, dd, blockquote {
-    font-size: 100%
-}
-
 a, a * {
     color:#930;
     text-decoration: none;
