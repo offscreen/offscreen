@@ -78,10 +78,9 @@ body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background: #ffffff !important;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
