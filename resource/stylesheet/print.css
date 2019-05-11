@@ -1,13 +1,10 @@
 @page {
-   size: 5.5in 8.5in;  
-   margin: 70pt 60pt 70pt;
+   size: A4;
 }
 
-@page:first {
-   size: 5.5in 8.5in;  
+@page:first { 
    margin: 0;
 }
-
 
 @page :left {
   margin-left: 3cm;
