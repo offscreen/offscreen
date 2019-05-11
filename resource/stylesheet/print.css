@@ -67,12 +67,11 @@ Bottom right book title, bottom left current page */
    }
 }
 
-
 body {
     counter-reset: chapternum figurenum;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background: #fffff8 !important;
-    color: #112;
+    background: #ffffff !important;
+    color: #000000;
     line-height: 1.5;
     font-size: 12pt;
 }
