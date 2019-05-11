@@ -218,7 +218,7 @@ code, pre {
 }
 
 main:after {
-    content: "\ All Rights Reserved";
+    content: counter(page);
     color: #999 !important;
     font-size: 1em;
     padding-top: 30px;
