@@ -233,4 +233,8 @@ main:after {
     font-size: 1em;
     padding-top: 30px;
 }
+
+script {
+    display: none !important;
+}
 /* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ */
