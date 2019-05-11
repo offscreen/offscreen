@@ -1,17 +1,11 @@
 @page {
-   size: A4;
+  size: A4; 
+  margin: 1.1811in;
 }
 
-@page:first { 
-   margin: 0;
-}
-
-@page :left {
-  margin-left: 3cm;
-}
-
-@page :right {
-  margin-left: 3cm;
+@page:first {
+  size: A4; 
+  margin: 1.1811in;
 }
 
 @page :right {
