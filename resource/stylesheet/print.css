@@ -89,6 +89,7 @@ body {
     color: #000000;
     line-height: 1.5;
     font-size: 12pt;
+    hyphens: auto;
 }
 
 body aside, article footer, .dp {
