@@ -80,7 +80,8 @@ Bottom right book title, bottom left current page */
 }
 
 body {
-    counter-reset: chapternum figurenum;
+    counter-reset: chapternum subchapternum subsubchapternum figurenum tablenum listnum sourcenum totalimages totaltables;
+    counter-increment: page 2;
     font-family: "ET Bembo", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background: #ffffff !important;
     width:100% !important;
