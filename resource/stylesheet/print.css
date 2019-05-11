@@ -76,7 +76,7 @@ article header hgroup h1 {
 
 article section p {
     text-align: left;
-    text-indent: 12.5mm;
+    /* text-indent: 12.5mm; */
 }
 
 p,
