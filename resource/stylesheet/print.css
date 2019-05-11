@@ -4,6 +4,12 @@
 @page {
   size: A4;
   margin: 1.1811in;
+
+  @bottom-right {
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 3mm;
+    }
 }
 
 @page:first {
@@ -22,49 +28,6 @@
     content: normal;
     margin: 0;
   }
-}
-
-/* styles for the right hand spread
-Bottom left we display the title of the book, bottom right the page using a CSS counter, top right the content of the current chapter */
-@page:right{ 
-   @bottom-left {
-       margin: 10pt 0 30pt 0;
-       border-top: .25pt solid #666;
-       content: "Offsreen Space";
-       font-size: 9pt;
-       color: #333;
-   }
-   @bottom-right { 
-       margin: 10pt 0 30pt 0;
-       border-top: .25pt solid #666;
-       content: counter(page);
-       font-size: 9pt;
-   }
-   @top-right {
-       content:  string(doctitle);
-       margin: 30pt 0 10pt 0;
-       font-size: 9pt;
-       color: #333;
-   }
-}
-
-/* styles for the left hand spread 
-Bottom right book title, bottom left current page */
-@page:left {
-
-   @bottom-right {
-       margin: 10pt 0 30pt 0;
-       border-top: .25pt solid #666;
-       content: "Offsreen Space";
-       font-size: 9pt;
-       color: #333;
-   }
-   @bottom-left { 
-       margin: 10pt 0 30pt 0;
-       border-top: .25pt solid #666;
-       content: counter(page);
-       font-size: 9pt;
-   }
 }
 
 *{
@@ -103,7 +66,7 @@ article {
 
 article section p {
     text-align: justify;
-    text-indent: 24px;
+    text-indent: 12.5mm;
 }
 
 /* get the title of the current chapter - this will be the content of the h1 
