@@ -34,8 +34,10 @@ body {
 }
 
 @page :first {
+    body {
     background: #112;
     color: #fffff8;
+    }
 }
 
 
