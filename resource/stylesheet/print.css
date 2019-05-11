@@ -2,7 +2,6 @@
 
 /* define a page */
 
-
 @page {
     size: A4 portrait;
     margin: 1in 0.5in 0.5in;
@@ -44,6 +43,14 @@
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important;
+}
+
+html,
+head,
+body {
+    background-color: transparent !important;
+    color: black;
+    border: none;
 }
 
 body {
