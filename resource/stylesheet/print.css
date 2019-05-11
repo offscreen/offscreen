@@ -79,6 +79,14 @@ article section p {
     text-indent: 12.5mm;
 }
 
+p,
+li,
+pre,
+blockquote,
+figure {
+    page-break-inside: avoid;
+}
+
 /* get the title of the current chapter - this will be the content of the h1 
 reset figure counter as figures start from 1 in each chapter */
 
