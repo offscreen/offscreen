@@ -79,7 +79,7 @@ iframe#gt-nvframe,
     display:none!important;
 }
 
-div#contentframe iframe {
+#contentframe iframe {
     overflow:visible;
     display:block!important;
     height:100%;
