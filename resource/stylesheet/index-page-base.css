@@ -306,6 +306,10 @@ pre.code.fullwidth {
    }
 }
 
+article>footer {
+    margin-top:3em;
+}
+
 body>footer {
-    margin-top: 8em;
+    margin-top: 10em;
 }
