@@ -92,6 +92,7 @@ iframe#gt-nvframe,
     display:none!important;
 }
 
+div#contentframe,
 iframe[name="c"] {
     overflow:visible;
     display:block!important;
