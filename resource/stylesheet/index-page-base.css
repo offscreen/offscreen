@@ -305,3 +305,7 @@ pre.code.fullwidth {
       print-color-adjust: exact;
    }
 }
+
+body>footer {
+    margin-top:4em;
+}
