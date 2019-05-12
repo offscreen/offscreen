@@ -74,6 +74,7 @@ body {
 body aside,
 div#wtgbr,
 div#gt-c,
+iframe#gt-nvframe
 .dp {
     display: none !important;
 }
@@ -82,7 +83,7 @@ div#gt-c,
     display: block !important;
 }
 
-iframe {
+div#contentframe iframe {
     display: block !important;
     height:100%;
     width:100%;
