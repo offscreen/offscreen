@@ -321,3 +321,7 @@ body>footer {
 iframe, iframe[id="gt-nvframe"] {
     display:none!important;
 }
+
+div[id="divBVHeader"]{
+    display:none!important;
+}
