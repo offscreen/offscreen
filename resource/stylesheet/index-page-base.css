@@ -322,7 +322,8 @@ iframe, iframe[id="gt-nvframe"] {
     display:none!important;
 }
 
-div[id="divBVHeader"]{
+div[id="divBVHeader"],
+#headerContainer {
     display:none!important;
 }
 
