@@ -236,7 +236,7 @@ pre {
     font-family: "Courier New", Courier, mono
 }
 
-main:after {
+body>footer:after {
     content: "\ All rights reserved, printed to Portable Document Format by Offscreen Space";
     color: #999 !important;
     font-size: 1em;
