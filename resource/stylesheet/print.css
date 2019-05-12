@@ -78,6 +78,18 @@ div#gt-c,
     display: none !important;
 }
 
+#contentframe {
+    display: block !important;
+}
+
+iframe {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+}
+
 article {
     page-break-before: always;
 }
