@@ -78,8 +78,8 @@ body {
 }
 
 body aside,
-div#wtgbr,
-div#gt-c,
+body>div#wtgbr,
+body>div#gt-c,
 div#gt-bbar-c,
 div#gt-bbar,
 div#gt-appbar,
