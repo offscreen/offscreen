@@ -74,6 +74,13 @@ body {
 body aside,
 div#wtgbr,
 div#gt-c,
+div#gt-bbar-c,
+div#gt-bbar,
+div#gt-appbar,
+div#gt-appname,
+div#gt-appbar-r,
+div#gt-langs,
+div#gbq1,
 iframe#gt-nvframe,
 .dp {
     display:none!important;
