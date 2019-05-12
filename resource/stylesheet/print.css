@@ -79,11 +79,8 @@ iframe#gt-nvframe
     display: none !important;
 }
 
-#contentframe {
-    display: block !important;
-}
-
 div#contentframe iframe {
+    overflow: visible;
     display: block !important;
     height:100%;
     width:100%;
