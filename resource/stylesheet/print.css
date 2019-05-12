@@ -72,6 +72,8 @@ body {
 }
 
 body aside,
+div#wtgbr,
+div#gt-c,
 .dp {
     display: none !important;
 }
