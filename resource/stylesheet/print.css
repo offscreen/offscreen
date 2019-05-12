@@ -83,6 +83,7 @@ div#gt-c,
 }
 
 iframe {
+    display: block !important;
     height:100%;
     width:100%;
     position:absolute;
