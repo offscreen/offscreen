@@ -74,14 +74,14 @@ body {
 body aside,
 div#wtgbr,
 div#gt-c,
-iframe#gt-nvframe
+iframe#gt-nvframe,
 .dp {
-    display: none !important;
+    display:none!important;
 }
 
 div#contentframe iframe {
-    overflow: visible;
-    display: block !important;
+    overflow:visible;
+    display:block!important;
     height:100%;
     width:100%;
     position:absolute;
