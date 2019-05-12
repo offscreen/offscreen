@@ -325,3 +325,7 @@ iframe, iframe[id="gt-nvframe"] {
 div[id="divBVHeader"]{
     display:none!important;
 }
+
+div[id="header"] {
+    display:none!important;
+}

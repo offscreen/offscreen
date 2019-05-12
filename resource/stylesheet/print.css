@@ -92,7 +92,11 @@ iframe#gt-nvframe,
     display:none!important;
 }
 
-div[id="divBVHeader"]{
+div[id="divBVHeader"] {
+    display:none!important;
+}
+
+div[id="header"] {
     display:none!important;
 }
 
