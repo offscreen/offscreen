@@ -9,5 +9,4 @@ window.onload = function() {
     document.getElementById('port').value = window.location.port;
     document.getElementById('protocol').value = window.location.protocol;
     document.getElementById('search').value = window.location.search;
-    document.getElementById('source').value = 'view-source:' + window.location.href;
 }
