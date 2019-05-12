@@ -72,7 +72,7 @@ body {
 }
 
 body aside,
-body footer,
+body>footer,
 .dp {
     display: none !important;
 }
