@@ -79,6 +79,7 @@ body {
 
 body aside,
 body>aside,
+aside[data-print="none"],
 body>div#wtgbr,
 #wtgbr,
 body>div#gt-c,
